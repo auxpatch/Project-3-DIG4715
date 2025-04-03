@@ -90,6 +90,7 @@ public class Player : MonoBehaviour
     {
         MovePlayer();
         ApplyJumpPhysics();
+        RotateCamera();
     }
 
     void MovePlayer()
