@@ -14,7 +14,7 @@ public class PauseMenu : MonoBehaviour
     void Start()
     {
         Pausemenu.SetActive(false);
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
     }
 
     // Update is called once per frame
