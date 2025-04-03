@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: stone_tile_1
-  m_Shader: {fileID: 4800000, guid: a6e3a97ee932c3b449cfc344d266046b, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: cf0f1475d7a32624fabe7dc294d0c428, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
