@@ -1,0 +1,8 @@
+Egress - Prototype Release Notes
+
+Known Issues: 
+	- Player model clings to side of objects when jumping
+	- Player can jump through ceiling of Art Prototype
+	- There is no player model (yet)
+	- You can fall out of the world in the Art Prototype by going past the stairs
+	- You can fall out of the world in the Gameplay Prototype
