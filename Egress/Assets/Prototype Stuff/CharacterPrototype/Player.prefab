@@ -155,7 +155,7 @@ MonoBehaviour:
   RunSpeed: 10
   jumpForce: 17
   fallMultiplier: 2.5
-  ascendMultiplier: 2
+  ascendMultiplier: 4.5
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
