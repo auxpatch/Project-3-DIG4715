@@ -169,7 +169,7 @@ PrefabInstance:
     - target: {fileID: -2977063897671913142, guid: 662f7f929a80b3e458120f6bdbac0b3e, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 9107b84fe09535745bb47e610c2a33c0, type: 2}
+      objectReference: {fileID: 2100000, guid: 5c958b3425170364284c9f8647bfe4f0, type: 2}
     - target: {fileID: 919132149155446097, guid: 662f7f929a80b3e458120f6bdbac0b3e, type: 3}
       propertyPath: m_Name
       value: heldTorch

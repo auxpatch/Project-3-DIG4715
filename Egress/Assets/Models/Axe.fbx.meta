@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c53afc4118ca7ec4e98592749a0a9b74
+guid: 510693ecc6140db44b44513a0ce7f0f4
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -9,11 +9,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: oldmetal_2
     second: {fileID: 2100000, guid: a60159a37412e6f4cbd8d9e7f957b9fe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: torch_1
-    second: {fileID: 2100000, guid: 9107b84fe09535745bb47e610c2a33c0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

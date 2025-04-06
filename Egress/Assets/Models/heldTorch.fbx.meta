@@ -14,6 +14,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: torch_1
     second: {fileID: 2100000, guid: 9107b84fe09535745bb47e610c2a33c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: wood_2
+    second: {fileID: 2100000, guid: 5c958b3425170364284c9f8647bfe4f0, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

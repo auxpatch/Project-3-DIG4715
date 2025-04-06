@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c53afc4118ca7ec4e98592749a0a9b74
+guid: 4e003faa0ebbe914cbb1341180ec495d
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -12,8 +12,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: torch_1
-    second: {fileID: 2100000, guid: 9107b84fe09535745bb47e610c2a33c0, type: 2}
+      name: whiteFlood
+    second: {fileID: 2100000, guid: 202b4fdf477a746489ae57bd5ffc7bd8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
