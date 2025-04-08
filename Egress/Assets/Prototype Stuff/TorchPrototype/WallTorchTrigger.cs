@@ -4,35 +4,74 @@ using UnityEngine;
 
 public class WallTorchTrigger : MonoBehaviour
 {
-    public GameObject FlameParticles;
+    [SerializeField] private ParticleSystem flameParticles;
+    [SerializeField] private Light torchLight;
+    [SerializeField] private Transform player;
+    [SerializeField] private float activationDistance = 3f;
+
     private bool isFlameActive;
 
     void Start()
     {
-        FlameParticles.SetActive(false);
+        if (flameParticles != null)
+        {
+            flameParticles.gameObject.SetActive(false);
+        }
+
         isFlameActive = false;
+
+        if (torchLight != null)
+        {
+            torchLight.enabled = false;
+        }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (player == null || flameParticles == null) return;
+
+        if (IsPlayerWithinActivationDistance() && Input.GetKeyDown(KeyCode.E))
         {
-            if (isFlameActive == true)
-            {
-                FlameParticles.SetActive(false);
-                isFlameActive = false;
-            }
-            else if (isFlameActive == false)
-            {
-                FlameParticles.SetActive(true);
-                isFlameActive = true;
-            }
+            ActivateTorch();
         }
     }
-    public void ToggleFlameParticles()
+
+    private bool IsPlayerWithinActivationDistance()
     {
-        isFlameActive = !isFlameActive;
-        FlameParticles.SetActive(isFlameActive);
+        float sqrDistance = (player.position - transform.position).sqrMagnitude;
+        return sqrDistance <= activationDistance * activationDistance;
+    }
+
+    private void ActivateTorch()
+    {
+        if (isFlameActive) return;
+
+        if (flameParticles != null)
+        {
+            flameParticles.gameObject.SetActive(true);
+            flameParticles.Play(); 
+        }
+
+        isFlameActive = true;
+
+        if (torchLight != null)
+        {
+            torchLight.enabled = true;
+        }
+    }
+
+    public void TurnOffFlameParticles()
+    {
+        if (flameParticles != null && flameParticles.isPlaying)
+        {
+            flameParticles.Stop();
+        }
+
+        if (torchLight != null)
+        {
+            torchLight.enabled = false;
+        }
+
+        isFlameActive = false;
     }
 }
-

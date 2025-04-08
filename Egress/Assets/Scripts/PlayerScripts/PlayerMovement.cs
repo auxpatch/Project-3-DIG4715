@@ -162,7 +162,7 @@ public class Player : MonoBehaviour
         //Flame particles toggle
         if (wallTorchTrigger != null)
         {
-            wallTorchTrigger.ToggleFlameParticles();
+            wallTorchTrigger.TurnOffFlameParticles();
         }
     }
 }

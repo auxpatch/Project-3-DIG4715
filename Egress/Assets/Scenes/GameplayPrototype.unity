@@ -794,9 +794,29 @@ PrefabInstance:
       value: WallTorch
       objectReference: {fileID: 0}
     - target: {fileID: 2839216655178933231, guid: ae5b84214232498478cf337d22ff293a, type: 3}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 1925027363}
+    - target: {fileID: 2839216655178933231, guid: ae5b84214232498478cf337d22ff293a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1925027363}
+    - target: {fileID: 2839216655178933231, guid: ae5b84214232498478cf337d22ff293a, type: 3}
+      propertyPath: torchLight
+      value: 
+      objectReference: {fileID: 1498444373}
+    - target: {fileID: 2839216655178933231, guid: ae5b84214232498478cf337d22ff293a, type: 3}
       propertyPath: FlameParticles
       value: 
       objectReference: {fileID: 1562799258}
+    - target: {fileID: 2839216655178933231, guid: ae5b84214232498478cf337d22ff293a, type: 3}
+      propertyPath: flameParticles
+      value: 
+      objectReference: {fileID: 1562799261}
+    - target: {fileID: 2839216655178933231, guid: ae5b84214232498478cf337d22ff293a, type: 3}
+      propertyPath: ActivationDistance
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4571353133462933296, guid: ae5b84214232498478cf337d22ff293a, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.7698345
@@ -1516,6 +1536,11 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!108 &1498444373 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 2311705347510193348, guid: 6eee460cb4e45754aa7e55e18d0d9d83, type: 3}
+  m_PrefabInstance: {fileID: 1568979785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1529091732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1588,6 +1613,11 @@ PrefabInstance:
 --- !u!1 &1562799258 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9090803164275625703, guid: 6eee460cb4e45754aa7e55e18d0d9d83, type: 3}
+  m_PrefabInstance: {fileID: 1568979785}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &1562799261 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2969601338651936024, guid: 6eee460cb4e45754aa7e55e18d0d9d83, type: 3}
   m_PrefabInstance: {fileID: 1568979785}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1568979785
@@ -2129,6 +2159,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870657301}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1925027363 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+  m_PrefabInstance: {fileID: 1337692673}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1928617761
 GameObject:
   m_ObjectHideFlags: 0
