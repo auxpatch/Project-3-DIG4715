@@ -152,9 +152,13 @@ public class Player : MonoBehaviour
         dashing = true;
         tr.emitting = true;
 
-        rb.velocity = new Vector3(transform.forward.x * dashingPower, 0f, transform.forward.z * dashingPower);
+        Vector3 originalGravity = Physics.gravity;
+        Physics.gravity = new Vector3(0, originalGravity.y * 0.75f, 0);
+
+        rb.velocity = new Vector3(transform.forward.x * dashingPower, 5f, transform.forward.z * dashingPower);
         yield return new WaitForSeconds(dashingTime);
-        rb.velocity = Vector3.zero;
+        Physics.gravity = originalGravity;
+        rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
         tr.emitting = false;
         yield return new WaitForSeconds(dashingCooldown);
         dashing = true;

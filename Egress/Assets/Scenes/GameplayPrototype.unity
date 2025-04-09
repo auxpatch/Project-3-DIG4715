@@ -1217,6 +1217,10 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: fallMultiplier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: ascendMultiplier
       value: 3
       objectReference: {fileID: 0}
