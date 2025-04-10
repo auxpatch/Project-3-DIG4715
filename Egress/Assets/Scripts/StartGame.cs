@@ -5,11 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
-    public void LoadScene()
-    {
-        SceneManager.LoadScene("GameplayPrototype");
-        Debug.Log("Next Scene");
-    }
+
 
     public void QuitGame()
     {
@@ -18,9 +14,9 @@ public class StartGame : MonoBehaviour
 
     }
 
-    public void LoadSceneLvl1()
+    public void LoadSceneHub()
     {
-        SceneManager.LoadScene("ArtPrototype");
+        SceneManager.LoadScene("Hub World");
         Debug.Log("Next Scene");
     }
 
