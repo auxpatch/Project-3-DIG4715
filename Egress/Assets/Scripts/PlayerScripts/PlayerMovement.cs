@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
     private bool dashing = true;
     private float dashingPower = 150f;
     private float dashingTime = 0.3f;
-    private float dashingCooldown = 0.75f;
+    private float dashingCooldown = 10f;
     public WallTorchTrigger wallTorchTrigger;
 
 
@@ -97,8 +97,7 @@ public class Player : MonoBehaviour
     {
 
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
-
-        // Check if the Shift key is held down
+        // Shift key to sprint
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : MoveSpeed;
         Vector3 targetVelocity = movement * currentSpeed;
 
@@ -153,7 +152,7 @@ public class Player : MonoBehaviour
         tr.emitting = true;
 
         Vector3 originalGravity = Physics.gravity;
-        Physics.gravity = new Vector3(0, originalGravity.y * 0.75f, 0);
+        Physics.gravity = new Vector3(0, originalGravity.y, 0);
 
         rb.velocity = new Vector3(transform.forward.x * dashingPower, 5f, transform.forward.z * dashingPower);
         yield return new WaitForSeconds(dashingTime);
