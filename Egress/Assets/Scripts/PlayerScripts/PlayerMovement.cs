@@ -97,8 +97,7 @@ public class Player : MonoBehaviour
     {
 
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
-
-        // Check if the Shift key is held down
+        // Shift key to sprint
         float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : MoveSpeed;
         Vector3 targetVelocity = movement * currentSpeed;
 
