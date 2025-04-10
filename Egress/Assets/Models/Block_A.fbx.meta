@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f5f696bd0476e8742a08df2679901763
+guid: d0d0f28a67e96f04994e41d2c7e7001a
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: GemBase
-    second: {fileID: 2100000, guid: 202b4fdf477a746489ae57bd5ffc7bd8, type: 2}
+      name: stone_tile_1
+    second: {fileID: 2100000, guid: 1c717f25cee58f0448266ff2958f80f1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

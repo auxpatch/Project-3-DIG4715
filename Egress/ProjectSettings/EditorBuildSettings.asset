@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/GameplayPrototype.unity
     guid: 67f479ecf98a6524eb46e3758c50abfe
   - enabled: 1
-    path: Assets/Scenes/ArtPrototype.unity
+    path: Assets/Scenes/Hub World.unity
     guid: f7c6135cc4a8668498dc4cc46d0b40da
   - enabled: 0
-    path: Assets/Scenes/Level 1.unity
+    path: Assets/Scenes/Red Level.unity
     guid: 90fba954b5eb7fc488216875bd3e8bb9
   m_configObjects: {}
