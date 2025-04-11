@@ -5,9 +5,11 @@ using UnityEngine;
 public class CheckPointScript : MonoBehaviour
 {
     private RespawnScript respawn;
+    private BoxCollider checkPointCollider;
 
     void Awake()
     {
+        checkPointCollider = GetComponent<BoxCollider>();
         respawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
     }
     // Start is called before the first frame update
@@ -27,6 +29,7 @@ public class CheckPointScript : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             respawn.respawnPoint = this.gameObject;
+            checkPointCollider.enabled = false;
         }
     }
     
