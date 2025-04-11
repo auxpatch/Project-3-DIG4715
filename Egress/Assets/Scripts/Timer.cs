@@ -8,11 +8,13 @@ public class Timer : MonoBehaviour
     [SerializeField, Range(0, 60)] private int _minutes;
     [SerializeField, Range(0, 60)] private int _seconds;
     [SerializeField] private TMP_Text _clockFace;
+    [SerializeField] private GameObject _gameOverPanel;
 
     private void Start()
     {
         DisplayTime();
         StartCoroutine(Countdown());
+        _gameOverPanel.SetActive(false);
     }
 
     private IEnumerator Countdown()
@@ -28,6 +30,7 @@ public class Timer : MonoBehaviour
                     if (_hours == 0)
                     {
                         Debug.Log("Time out");
+                        _gameOverPanel.SetActive(true);
                         yield break;
                     }
 
