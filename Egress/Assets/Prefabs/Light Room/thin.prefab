@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4203282900844238306}
   m_Layer: 3
-  m_Name: Good Blocks
+  m_Name: thin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
