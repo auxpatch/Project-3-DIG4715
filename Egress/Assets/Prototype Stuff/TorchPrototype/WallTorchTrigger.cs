@@ -51,8 +51,10 @@ public class WallTorchTrigger : MonoBehaviour
             flameParticles.gameObject.SetActive(true);
             flameParticles.Play(); 
         }
+        
 
         isFlameActive = true;
+        soundManager.Instance.PlaySFX("TorchLight");
 
         if (torchLight != null)
         {

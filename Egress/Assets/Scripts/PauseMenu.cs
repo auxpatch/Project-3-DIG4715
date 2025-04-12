@@ -10,6 +10,8 @@ public class PauseMenu : MonoBehaviour
     public GameObject Pausemenu;
     public bool isPaused;
 
+    public Slider musicSlider, sfxSlider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -55,6 +57,26 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Start Screen");
+    }
+
+    public void ToggleMusic()
+    {
+        soundManager.Instance.toggleMusic();
+    }
+
+    public void ToggleSfx()
+    {
+        soundManager.Instance.toggleSfx();
+    }
+
+    public void musicVolume()
+    {
+        soundManager.Instance.ChangeMusic(musicSlider.value);
+    }
+
+    public void sfxVolume()
+    {
+        soundManager.Instance.ChangeSfx(sfxSlider.value);
     }
 
     public void Quit()
