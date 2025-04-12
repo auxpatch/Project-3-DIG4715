@@ -36,17 +36,18 @@ public class soundManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayMusic("Level1");
     }
 
     void Update()
     {
         var currentScene = SceneManager.GetActiveScene().name;
-        if(currentScene != lastScene) 
+        /*if(currentScene != lastScene) 
         {
             lastScene = currentScene;
             changeSong();
-        }
+        }*/
+
     }
 
     void changeSong()
@@ -55,7 +56,7 @@ public class soundManager : MonoBehaviour
         {
             //AudioSource.PlayOneShot (hubLoop, 0.4f);
         }
-        else if(lastScene == "LightRoom")
+        else if(lastScene == "Light Room")
         {
             musicSource.Stop();
             PlayMusic("Level1");

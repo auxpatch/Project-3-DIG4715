@@ -279,16 +279,16 @@ RectTransform:
   m_GameObject: {fileID: 69689864}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.84352595, y: 0.84352595, z: 0.84352595}
+  m_LocalScale: {x: 0.5788766, y: 0.5051943, z: 0.63108945}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 331482105}
-  m_Father: {fileID: 2012359980}
+  m_Father: {fileID: 923659735}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 148.3999, y: 76.54712}
+  m_AnchoredPosition: {x: -0.686249, y: 86.24273}
+  m_SizeDelta: {x: 788.3999, y: 496.59033}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &69689866
 MonoBehaviour:
@@ -3730,7 +3730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1bf6bd809652184ba103837398e6854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 0}
+  volumeSlider: {fileID: 580419969}
   music:
   - name: Level1
     clip: {fileID: 8300000, guid: 23aa149c3c4deca42bb715f0b55cc63f, type: 3}
@@ -3786,6 +3786,7 @@ RectTransform:
   m_LocalScale: {x: 1.4571773, y: 1.6697059, z: 1.3366187}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 69689865}
   - {fileID: 1359914425}
   m_Father: {fileID: 1391325818}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6350,7 +6351,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1391325816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9755,7 +9756,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 69689865}
   - {fileID: 1391325818}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -10238,6 +10238,6 @@ SceneRoots:
   - {fileID: 70160420}
   - {fileID: 680506337}
   - {fileID: 1635667856}
-  - {fileID: 551795104}
   - {fileID: 2012359980}
+  - {fileID: 551795104}
   - {fileID: 921078980}
