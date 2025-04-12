@@ -79,13 +79,6 @@ public class soundManager : MonoBehaviour
         }
 
     }
-   
-
-    public void ChangeVolume()
-    {
-        AudioListener.volume = volumeSlider.value;
-   
-    }
 
     //finds and plays sound effects
     public void PlaySFX(string name)
@@ -102,6 +95,28 @@ public class soundManager : MonoBehaviour
             sfxSource.PlayOneShot(s.clip);
         }
 
+    }
+
+    public void toggleMusic()
+    {
+        musicSource.mute = !musicSource.mute;
+    }
+
+    public void toggleSfx()
+    {
+        sfxSource.mute = !sfxSource.mute;
+    }
+
+    public void ChangeMusic(float volume)
+    {
+        musicSource.volume = volume;
+   
+    }
+
+    public void ChangeSfx(float volume)
+    {
+        sfxSource.volume = volume;
+   
     }
  
 }

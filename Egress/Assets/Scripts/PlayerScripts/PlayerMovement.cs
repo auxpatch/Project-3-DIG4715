@@ -66,6 +66,7 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
+            soundManager.Instance.PlaySFX("Jump");
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashing && !isGrounded)
@@ -153,6 +154,7 @@ public class Player : MonoBehaviour
 
         Vector3 originalGravity = Physics.gravity;
         Physics.gravity = new Vector3(0, originalGravity.y, 0);
+        soundManager.Instance.PlaySFX("AirDash");
 
         rb.velocity = new Vector3(transform.forward.x * dashingPower, 5f, transform.forward.z * dashingPower);
         yield return new WaitForSeconds(dashingTime);
