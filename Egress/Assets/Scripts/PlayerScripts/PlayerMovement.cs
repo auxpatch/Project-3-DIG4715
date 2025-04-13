@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 
 public class Player : MonoBehaviour
 {
     // Camera Rotation
     public float mouseSensitivity = 2f;
+    public float controllerSensitivity = 0.1f;
     private float verticalRotation = 0f;
     private Transform cameraTransform;
 
@@ -34,9 +36,11 @@ public class Player : MonoBehaviour
     private float dashingTime = 0.3f;
     private float dashingCooldown = 10f;
     public WallTorchTrigger wallTorchTrigger;
+    public AudioClip jumpSound;
 
 
     [SerializeField] private TrailRenderer tr; 
+    //soundManager audioManager;
 
     void Start()
     {
@@ -54,6 +58,7 @@ public class Player : MonoBehaviour
 
         // Allows the trail renderer to be enabled and disabled
         tr.emitting = false;
+        //audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<soundManager>();
     }
 
     void Update()
@@ -66,6 +71,7 @@ public class Player : MonoBehaviour
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
+            //audioManager.PlayOneShot(jumpSound);
             soundManager.Instance.PlaySFX("Jump");
         }
 
@@ -118,9 +124,12 @@ public class Player : MonoBehaviour
     void RotateCamera()
     {
         float horizontalRotation = Input.GetAxis("Mouse X") * mouseSensitivity;
+        horizontalRotation = Input.GetAxis("Controller X") * controllerSensitivity;
+        
         transform.Rotate(0, horizontalRotation, 0);
 
         verticalRotation -= Input.GetAxis("Mouse Y") * mouseSensitivity;
+        verticalRotation -= Input.GetAxis("Controller Y") * controllerSensitivity;
         verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
 
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);

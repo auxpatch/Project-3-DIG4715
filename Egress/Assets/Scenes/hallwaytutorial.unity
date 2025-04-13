@@ -1356,12 +1356,28 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.02283008, y: 0.035118107, z: 0.017335929}
   m_Center: {x: -0.00031372113, y: 0.021097386, z: -0.0006630658}
+--- !u!114 &1714088043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1714088034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1772737ed307ee4398a9a319487abc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redLevel: 0
+  lightroomLevel: 0
+  level3: 0
+  hub: 1
 --- !u!1001 &1714845952
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1448,6 +1464,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da0d3c95625fe9a44821452ca4ab0796, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1714088039}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: da0d3c95625fe9a44821452ca4ab0796, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1714088043}
   m_SourcePrefab: {fileID: 100100000, guid: da0d3c95625fe9a44821452ca4ab0796, type: 3}
 --- !u!1001 &1758554796
 PrefabInstance:
