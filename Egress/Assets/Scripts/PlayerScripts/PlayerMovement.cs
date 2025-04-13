@@ -124,7 +124,7 @@ public class Player : MonoBehaviour
     void RotateCamera()
     {
         float horizontalRotation = Input.GetAxis("Mouse X") * mouseSensitivity;
-        horizontalRotation = Input.GetAxis("Controller X") * controllerSensitivity;
+        horizontalRotation += Input.GetAxis("Controller X") * controllerSensitivity;
         
         transform.Rotate(0, horizontalRotation, 0);
 
