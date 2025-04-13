@@ -31,7 +31,11 @@ public class Timer : MonoBehaviour
                     {
                         Debug.Log("Time out");
                         _gameOverPanel.SetActive(true);
+                        Time.timeScale = 0f;
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
                         yield break;
+
                     }
 
                     _hours--;

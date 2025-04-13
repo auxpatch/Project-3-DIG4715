@@ -9,7 +9,7 @@ public class FallRespawnScript : MonoBehaviour
 
     [SerializeField] private Transform respawnPoint;
 
-
+    
     void OnTriggerEnter(Collider player)
 
     {

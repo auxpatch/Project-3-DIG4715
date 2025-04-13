@@ -3,7 +3,9 @@ guid: e5c53e015d88e6a44a9ce86ee45f604b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - _clockFace: {instanceID: 0}
+  - _gameOverPanel: {fileID: 4985247814316155857, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
