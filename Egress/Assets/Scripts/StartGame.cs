@@ -16,7 +16,7 @@ public class StartGame : MonoBehaviour
 
     public void LoadSceneHub()
     {
-        SceneManager.LoadScene("Hub World");
+       SceneManager.LoadScene("Light Room", LoadSceneMode.Single);
         Debug.Log("Next Scene");
     }
 
