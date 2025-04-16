@@ -1268,9 +1268,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1772737ed307ee4398a9a319487abc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redLevel: 0
+  redLevel: 1
   lightroomLevel: 0
-  level3: 0
+  greenLevel: 0
   hub: 0
 --- !u!65 &322218101
 BoxCollider:
@@ -2847,7 +2847,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   redLevel: 0
   lightroomLevel: 0
-  level3: 0
+  greenLevel: 1
   hub: 0
 --- !u!65 &859886864
 BoxCollider:
@@ -3958,6 +3958,10 @@ PrefabInstance:
       value: 4.5
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: wallTorchTrigger
+      value: 
+      objectReference: {fileID: 1760714043}
+    - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: controllerSensitivity
       value: 4
       objectReference: {fileID: 0}
@@ -4458,8 +4462,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   redLevel: 0
-  lightroomLevel: 0
-  level3: 1
+  lightroomLevel: 1
+  greenLevel: 0
   hub: 0
 --- !u!65 &1360784719
 BoxCollider:
@@ -5276,6 +5280,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 866831274}
   m_SourcePrefab: {fileID: 100100000, guid: b9eb696f51bb9654892aec65aec27992, type: 3}
+--- !u!114 &1760714043 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 365717981132774897, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+  m_PrefabInstance: {fileID: 1262741676}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc26ac07b5a7e50408c1d01eafc87747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1834899306
 GameObject:
   m_ObjectHideFlags: 0

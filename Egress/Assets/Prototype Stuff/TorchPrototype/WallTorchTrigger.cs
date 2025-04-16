@@ -8,7 +8,7 @@ public class WallTorchTrigger : MonoBehaviour
     [SerializeField] private Light torchLight;
     public GameObject player;
 
-    private bool isFlameActive;
+    public bool isFlameActive;
     private bool playerInTrigger = false;
 
     void Start()
@@ -32,6 +32,18 @@ public class WallTorchTrigger : MonoBehaviour
     {
         if (player == null || flameParticles == null) return;
 
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            //TurnOffFlameParticles();
+            //Debug.Log("Torch Deactivated");
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            //ActivateTorch();
+           // Debug.Log("Torch Activated");
+        }
+
         if (playerInTrigger && Input.GetKeyDown(KeyCode.E))
         {
             ActivateTorch();
@@ -54,7 +66,7 @@ public class WallTorchTrigger : MonoBehaviour
         }
     }
 
-    private void ActivateTorch()
+    public void ActivateTorch()
     {
         if (isFlameActive) return;
 
@@ -88,4 +100,6 @@ public class WallTorchTrigger : MonoBehaviour
 
         isFlameActive = false;
     }
+
+
 }

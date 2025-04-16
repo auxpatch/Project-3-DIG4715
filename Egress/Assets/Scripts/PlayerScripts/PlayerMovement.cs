@@ -37,6 +37,8 @@ public class Player : MonoBehaviour
     private float dashingCooldown = 10f;
     public WallTorchTrigger wallTorchTrigger;
     public AudioClip jumpSound;
+   
+    
 
 
     [SerializeField] private TrailRenderer tr; 
@@ -59,6 +61,7 @@ public class Player : MonoBehaviour
         // Allows the trail renderer to be enabled and disabled
         tr.emitting = false;
         //audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<soundManager>();
+        
     }
 
     void Update()
@@ -75,7 +78,13 @@ public class Player : MonoBehaviour
             soundManager.Instance.PlaySFX("Jump");
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && dashing && !isGrounded)
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            wallTorchTrigger.ActivateTorch();
+            Debug.Log("Torch Activated");
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && dashing && !isGrounded && wallTorchTrigger.isFlameActive == true)
         {
             StartCoroutine(Dash());
         }
@@ -170,13 +179,26 @@ public class Player : MonoBehaviour
         Physics.gravity = originalGravity;
         rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
         tr.emitting = false;
-        yield return new WaitForSeconds(dashingCooldown);
-        dashing = true;
-
-        //Flame particles toggle
+                //Flame particles toggle
         if (wallTorchTrigger != null)
         {
             wallTorchTrigger.TurnOffFlameParticles();
+            Debug.Log("Torch Deactivated");
+        }
+        Debug.Log("Dashing");
+        yield return new WaitForSeconds(dashingCooldown);
+        dashing = true;
+        Debug.Log("Dashing 2");
+
+
+    }
+
+     private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Torch")) 
+        {
+            wallTorchTrigger.ActivateTorch();
+            Debug.Log("Torch Relit");
         }
     }
 }
