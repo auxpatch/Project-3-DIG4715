@@ -109,15 +109,15 @@ public class Player : MonoBehaviour
         Vector3 targetVelocity = movement * currentSpeed;
 
         // Apply movement to the Rigidbody
-        Vector3 velocity = rb.velocity;
+        Vector3 velocity = rb.linearVelocity;
         velocity.x = targetVelocity.x;
         velocity.z = targetVelocity.z;
-        rb.velocity = velocity;
+        rb.linearVelocity = velocity;
 
         // If we aren't moving and are on the ground, stop velocity so we don't slide
         if (isGrounded && moveHorizontal == 0 && moveForward == 0)
         {
-            rb.velocity = new Vector3(0, rb.velocity.y, 0);
+            rb.linearVelocity = new Vector3(0, rb.linearVelocity.y, 0);
         }
     }
 
@@ -139,20 +139,20 @@ public class Player : MonoBehaviour
     {
         isGrounded = false;
         groundCheckTimer = groundCheckDelay;
-        rb.velocity = new Vector3(rb.velocity.x, jumpForce, rb.velocity.z); 
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z); 
     }
 
     void ApplyJumpPhysics()
     {
-        if (rb.velocity.y < 0)
+        if (rb.linearVelocity.y < 0)
         {
             
-            rb.velocity += Vector3.up * Physics.gravity.y * fallMultiplier * Time.fixedDeltaTime;
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * fallMultiplier * Time.fixedDeltaTime;
         } 
-        else if (rb.velocity.y > 0)
+        else if (rb.linearVelocity.y > 0)
         {
             
-            rb.velocity += Vector3.up * Physics.gravity.y * ascendMultiplier * Time.fixedDeltaTime;
+            rb.linearVelocity += Vector3.up * Physics.gravity.y * ascendMultiplier * Time.fixedDeltaTime;
         }
     }
 
@@ -165,10 +165,10 @@ public class Player : MonoBehaviour
         Physics.gravity = new Vector3(0, originalGravity.y, 0);
         soundManager.Instance.PlaySFX("AirDash");
 
-        rb.velocity = new Vector3(transform.forward.x * dashingPower, 5f, transform.forward.z * dashingPower);
+        rb.linearVelocity = new Vector3(transform.forward.x * dashingPower, 5f, transform.forward.z * dashingPower);
         yield return new WaitForSeconds(dashingTime);
         Physics.gravity = originalGravity;
-        rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
+        rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
         tr.emitting = false;
         yield return new WaitForSeconds(dashingCooldown);
         dashing = true;

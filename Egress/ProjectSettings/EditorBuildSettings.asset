@@ -15,10 +15,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Hub World.unity
     guid: f7c6135cc4a8668498dc4cc46d0b40da
   - enabled: 1
-    path: Assets/Scenes/Red Level.unity
+    path: Assets/Scenes/Level - Red.unity
     guid: 90fba954b5eb7fc488216875bd3e8bb9
   - enabled: 1
     path: Assets/Scenes/Light Room.unity
     guid: 0ecd21a891ef4c04ea1cea413bce1296
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: f5b49deee67cb7c4ab1ae613f4b36f3f, type: 3}
+  m_UseUCBPForAssetBundles: 0
