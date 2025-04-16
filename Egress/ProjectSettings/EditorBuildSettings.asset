@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Light Room.unity
     guid: 0ecd21a891ef4c04ea1cea413bce1296
+  - enabled: 1
+    path: Assets/Scenes/Level - Green.unity
+    guid: c77d18cea55fcce4aa6e6bb83faabf84
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: f5b49deee67cb7c4ab1ae613f4b36f3f, type: 3}
   m_UseUCBPForAssetBundles: 0
