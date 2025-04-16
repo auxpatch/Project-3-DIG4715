@@ -6,10 +6,10 @@ public class WallTorchTrigger : MonoBehaviour
 {
     [SerializeField] private ParticleSystem flameParticles;
     [SerializeField] private Light torchLight;
-    [SerializeField] private Transform player;
-    [SerializeField] private float activationDistance = 3f;
+    public GameObject player;
 
     private bool isFlameActive;
+    private bool playerInTrigger = false;
 
     void Start()
     {
@@ -24,22 +24,34 @@ public class WallTorchTrigger : MonoBehaviour
         {
             torchLight.enabled = false;
         }
+
+        playerInTrigger = false;    
     }
 
     void Update()
     {
         if (player == null || flameParticles == null) return;
 
-        if (IsPlayerWithinActivationDistance() && Input.GetKeyDown(KeyCode.E))
+        if (playerInTrigger && Input.GetKeyDown(KeyCode.E))
         {
             ActivateTorch();
         }
     }
 
-    private bool IsPlayerWithinActivationDistance()
+    private void OnTriggerEnter(Collider other)
     {
-        float sqrDistance = (player.position - transform.position).sqrMagnitude;
-        return sqrDistance <= activationDistance * activationDistance;
+        if (other.CompareTag("Player")) 
+        {
+            playerInTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            playerInTrigger = false;
+        }
     }
 
     private void ActivateTorch()
