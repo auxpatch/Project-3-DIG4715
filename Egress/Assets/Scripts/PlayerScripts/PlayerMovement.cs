@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     private float dashingCooldown = 10f;
     public WallTorchTrigger wallTorchTrigger;
     public AudioClip jumpSound;
-   
+    Animator anim;
     
 
 
@@ -61,6 +61,7 @@ public class Player : MonoBehaviour
         // Allows the trail renderer to be enabled and disabled
         tr.emitting = false;
         //audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<soundManager>();
+        anim = GetComponentInChildren<Animator>();
         
     }
 
@@ -70,10 +71,21 @@ public class Player : MonoBehaviour
         moveForward = Input.GetAxisRaw("Vertical");
 
         RotateCamera();
+        //Debug.Log(moveForward.ToString());
+        if (moveForward != 0 && isGrounded)
+        {
+            anim.SetInteger("State", 3);
+        } else if (moveForward == 0 && isGrounded)
+        {
+            anim.SetInteger("State", 0);
+        }
+
+        
 
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
             Jump();
+            anim.SetInteger("State", 1);
             //audioManager.PlayOneShot(jumpSound);
             soundManager.Instance.PlaySFX("Jump");
         }
@@ -81,7 +93,14 @@ public class Player : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T))
         {
             wallTorchTrigger.ActivateTorch();
-            Debug.Log("Torch Activated");
+            anim.SetInteger("State", 1);
+            Debug.Log("State 0");
+        }
+
+        if (Input.GetKeyDown(KeyCode.U))
+        {
+            anim.SetInteger("State", 0);
+            Debug.Log("State 0");
         }
 
         if (Input.GetKeyDown(KeyCode.LeftShift) && dashing && !isGrounded && wallTorchTrigger.isFlameActive == true)
@@ -94,6 +113,7 @@ public class Player : MonoBehaviour
         {
             Vector3 rayOrigin = transform.position + Vector3.up * 0.1f;
             isGrounded = Physics.Raycast(rayOrigin, Vector3.down, raycastDistance, groundLayer);
+            anim.SetInteger("State", 0);
         }
         else
         {
