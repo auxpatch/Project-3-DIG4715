@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Level - Red.unity
     guid: 90fba954b5eb7fc488216875bd3e8bb9
   - enabled: 1
-    path: Assets/Scenes/Light Room.unity
+    path: Assets/Scenes/Level - Blue.unity
     guid: 0ecd21a891ef4c04ea1cea413bce1296
   - enabled: 1
     path: Assets/Scenes/Level - Green.unity
