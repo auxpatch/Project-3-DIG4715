@@ -5279,7 +5279,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6248105272356246028, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
   m_PrefabInstance: {fileID: 1914025201}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1485819368}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 134251a41d8b50c4b8aabf002531c90e, type: 3}
@@ -6633,6 +6633,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6066751604906264024, guid: 0527b9dabe2c8bc4eb6a304ff92f1548, type: 3}
   m_PrefabInstance: {fileID: 1482077375}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1485819368 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4985247814316155857, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
+  m_PrefabInstance: {fileID: 1914025201}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1491572229
 PrefabInstance:
@@ -8272,6 +8277,7 @@ GameObject:
   - component: {fileID: 1964624782}
   - component: {fileID: 1964624781}
   - component: {fileID: 1964624780}
+  - component: {fileID: 1964624784}
   m_Layer: 5
   m_Name: Canvas(countdown)
   m_TagString: Untagged
@@ -8362,6 +8368,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1964624784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1964624779}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5c53e015d88e6a44a9ce86ee45f604b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _hours: 0
+  _minutes: 2
+  _seconds: 0
+  _clockFace: {fileID: 657892224}
+  _gameOverPanel: {fileID: 1485819368}
 --- !u!1 &1967098724
 GameObject:
   m_ObjectHideFlags: 0
