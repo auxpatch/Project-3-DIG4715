@@ -1338,7 +1338,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1355,7 +1355,6 @@ GameObject:
   - component: {fileID: 597244397}
   - component: {fileID: 597244396}
   - component: {fileID: 597244395}
-  - component: {fileID: 597244400}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1462,23 +1461,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &597244400
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 597244394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1bf6bd809652184ba103837398e6854, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  volumeSlider: {fileID: 566799514}
-  music: []
-  sfx: []
-  musicSource: {fileID: 0}
-  sfxSource: {fileID: 0}
 --- !u!1 &645547634
 GameObject:
   m_ObjectHideFlags: 0
