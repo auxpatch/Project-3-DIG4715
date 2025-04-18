@@ -41,7 +41,6 @@ public class InteractorScript : MonoBehaviour
                     }
                 }
             }
-            
 
             else //If nothing at all with an above tag was hit with the Raycast within the specified distance then run this
             {
