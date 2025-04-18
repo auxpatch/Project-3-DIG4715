@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7bd7f89c3f3fd5f408252ba6a051c28e
+guid: 20822e1646079734e94b5b70220b18e7
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,8 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: standardSurface2
-    second: {fileID: 2100000, guid: 202b4fdf477a746489ae57bd5ffc7bd8, type: 2}
+      name: marble_tile_1
+    second: {fileID: 2100000, guid: 64e222fb223265546bc6c5e9fcf2f6bd, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -21,8 +21,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 

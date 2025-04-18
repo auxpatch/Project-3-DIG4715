@@ -1,9 +1,14 @@
 fileFormatVersion: 2
-guid: da0d3c95625fe9a44821452ca4ab0796
+guid: a727cc7af1885ac40b45023505af6ab3
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: tablet_1
+    second: {fileID: 2100000, guid: 7c2b556909d96bb458efb2ba5e555a93, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -16,8 +21,6 @@ ModelImporter:
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
     motionNodeName: 
-    rigImportErrors: 
-    rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
