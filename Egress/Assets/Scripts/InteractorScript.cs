@@ -9,7 +9,7 @@ public class InteractorScript : MonoBehaviour
     public GameObject PlayerInfo;
     public bool isPaused;
 
-    float raycastDistance = 6; //Adjust to suit your use case
+    float raycastDistance = 3; //Adjust to suit your use case
 
     public Text interactText; //Create GUI Canvas on your scene if you havnt already and a UI Text Element in a suitable location on your screen and apply it to this Text variable
 
