@@ -27,6 +27,8 @@ public class RespawnScript : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             player.transform.position = respawnPoint.transform.position;
+
+            Debug.Log("Player hit");
         }
     }
 }
