@@ -43,6 +43,7 @@ public class Interator : MonoBehaviour
 
   void OnTriggerExit(Collider other) 
             {
+                 isPlayerInRange = false;
                 Debug.Log("ijfhei");
                 if(interactText.text != "")//If the interactText is not already set as nothing then set it to nothing - this is to help optimise and save from constantly spamming this request
                 {
