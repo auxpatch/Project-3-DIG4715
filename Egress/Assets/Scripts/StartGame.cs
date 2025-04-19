@@ -14,9 +14,9 @@ public class StartGame : MonoBehaviour
 
     }
 
-    public void LoadSceneHub()
+    public void LoadSceneStart()
     {
-       SceneManager.LoadScene("Light Room", LoadSceneMode.Single);
+       SceneManager.LoadScene("Level - Tutorial", LoadSceneMode.Single);
         Debug.Log("Next Scene");
     }
 
