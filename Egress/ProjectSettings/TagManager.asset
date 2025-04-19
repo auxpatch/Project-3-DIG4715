@@ -8,6 +8,7 @@ TagManager:
   - AudioManager
   - Torch
   - tablet
+  - Arrow
   layers:
   - Default
   - TransparentFX

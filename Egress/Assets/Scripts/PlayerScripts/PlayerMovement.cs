@@ -38,7 +38,12 @@ public class Player : MonoBehaviour
     public WallTorchTrigger wallTorchTrigger;
     public AudioClip jumpSound;
     Animator anim;
-    
+
+    //Player Knockback
+    private float knockbackForce = 600f;
+    private float knockbackTime = 0.5f;
+    private float knockBackCounter;
+
 
 
     [SerializeField] private TrailRenderer tr; 
@@ -220,5 +225,22 @@ public class Player : MonoBehaviour
             wallTorchTrigger.ActivateTorch();
             Debug.Log("Torch Relit");
         }
+
+        else if (other.CompareTag("Arrow"))
+        {
+            Vector3 knockbackDirection = (transform.position - other.transform.position).normalized;
+
+            KnockBack(knockbackDirection);
+
+            Debug.Log("Knockback");
+        }
+    }
+
+    public void KnockBack(Vector3 direction)
+    {
+        knockBackCounter = knockbackTime;
+
+        rb.linearVelocity = Vector3.zero; 
+        rb.AddForce(direction.normalized * knockbackForce, ForceMode.Impulse);
     }
 }
