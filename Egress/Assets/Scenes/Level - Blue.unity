@@ -3908,6 +3908,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 880d1bb00c1ffae45be5d0981e47489c, type: 3}
+--- !u!114 &774605217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 365717981132774897, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+  m_PrefabInstance: {fileID: 827099353}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc26ac07b5a7e50408c1d01eafc87747, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &784916349
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4233,6 +4244,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4841733377961484145, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_ClearFlags
       value: 1
@@ -4259,8 +4274,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1555488898}
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4658934629402819270, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2025043064}
   m_SourcePrefab: {fileID: 100100000, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
 --- !u!4 &827897075 stripped
 Transform:
@@ -8790,7 +8811,7 @@ GameObject:
   - component: {fileID: 1555488894}
   m_Layer: 0
   m_Name: Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8938,12 +8959,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1555488893}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.06999999, y: 4, z: -110.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.6666667, y: 2.04, z: -3.8533325}
+  m_LocalScale: {x: 1.3333334, y: 1.3333334, z: 1.3333334}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 2025043057}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1562069780
 PrefabInstance:
@@ -11694,6 +11715,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
   m_PrefabInstance: {fileID: 827099353}
   m_PrefabAsset: {fileID: 0}
+--- !u!96 &2025043058 stripped
+TrailRenderer:
+  m_CorrespondingSourceObject: {fileID: 7996649993788301740, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+  m_PrefabInstance: {fileID: 827099353}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2025043064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2025043056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ae952665eb2520418340cef78c9fbf5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseSensitivity: 3.2
+  controllerSensitivity: 4
+  MoveSpeed: 6
+  RunSpeed: 10
+  jumpForce: 17
+  fallMultiplier: 2.5
+  ascendMultiplier: 4.5
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  wallTorchTrigger: {fileID: 774605217}
+  jumpSound: {fileID: 8300000, guid: 2a842e8216336dc43ad9f5be14ce9abd, type: 3}
+  tr: {fileID: 2025043058}
 --- !u!1001 &2033659798
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11894,7 +11945,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &2101615360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12865,7 +12916,6 @@ SceneRoots:
   - {fileID: 1914025201}
   - {fileID: 3190694329092685828}
   - {fileID: 1980256644}
-  - {fileID: 1555488898}
   - {fileID: 2101615364}
   - {fileID: 405895829}
   - {fileID: 436082061}
