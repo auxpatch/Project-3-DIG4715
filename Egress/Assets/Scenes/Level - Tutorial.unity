@@ -24372,6 +24372,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 190132572676512216, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
+      propertyPath: volumeSlider
+      value: 
+      objectReference: {fileID: 247606035}
     - target: {fileID: 3123052833279844367, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -25839,7 +25843,6 @@ SceneRoots:
   - {fileID: 1619321666}
   - {fileID: 1234172827}
   - {fileID: 1986980723}
-  - {fileID: 736404442}
   - {fileID: 1711014126}
   - {fileID: 1517243056}
   - {fileID: 1928821270}
@@ -25859,3 +25862,4 @@ SceneRoots:
   - {fileID: 1789590136}
   - {fileID: 1272451337}
   - {fileID: 1763999525}
+  - {fileID: 736404442}
