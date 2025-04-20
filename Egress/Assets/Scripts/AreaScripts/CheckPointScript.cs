@@ -24,7 +24,7 @@ public class CheckPointScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        soundManager.Instance.PlaySFX("CheckpointDing");
+        //soundManager.Instance.PlaySFX("CheckpointDing");
         if(other.gameObject.CompareTag("Player"))
         {
             respawn.respawnPoint = this.gameObject;
