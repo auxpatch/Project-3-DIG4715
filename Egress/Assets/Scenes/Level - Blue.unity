@@ -9106,6 +9106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ending_Point
       objectReference: {fileID: 0}
+    - target: {fileID: 6892075302489604761, guid: 413efacabf7e2f744b7e56b5879cf8ef, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
