@@ -10,16 +10,16 @@ public class soundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     public static soundManager Instance;
+    public Toggle toggle;
 
     public AudioSrc[] music, sfx;
+    //public AudioClip[] musicClip;
     public AudioSource musicSource, sfxSource;
 
-    private string lastScene;
+    //private string lastScene;
 
     private void Awake()
     {
-        //retrieves the name of the scene
-        lastScene = SceneManager.GetActiveScene().name;
 
         if(Instance == null)
         {
@@ -31,12 +31,15 @@ public class soundManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        //retrieves the name of the scene
+        //SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        PlayMusic("Level1");
+        //PlayMusic("Level1");
     }
 
     void Update()
@@ -50,7 +53,7 @@ public class soundManager : MonoBehaviour
 
     }
 
-    void changeSong()
+    /*void changeSong()
     {
         if(lastScene == "Hub World")
         {
@@ -61,7 +64,7 @@ public class soundManager : MonoBehaviour
             musicSource.Stop();
             PlayMusic("Level1");
         }
-    }
+    }*/
 
     public void PlayMusic(string name)
     {
@@ -97,6 +100,38 @@ public class soundManager : MonoBehaviour
 
     }
 
+    /*void OnSceneLoaded(Scene scene, LoadSceneMode sceneMode)
+    {
+        // Replacement variable (doesn't change the original audio source)
+        AudioSource source = new AudioSource();
+
+        // Plays different music in different scenes
+        switch (scene.name)
+        {
+            case "Start Screen":
+                source.Stop();
+                musicSource.clip = PlayMusic("Menu");
+                source.loop = toggle.isOn;
+                break;
+            case "Hub World":
+                source.Stop();
+                source.clip = musicClip[1];
+                source.loop = toggle.isOn;
+                break;
+            default:
+                source.Stop();
+                source.clip = musicClip[2];
+                break;
+        }
+
+        // Only switch the music if it changed
+        if (source.clip != musicSource.clip)
+        {
+            musicSource.enabled = false;
+            musicSource.clip = source.clip;
+            musicSource.enabled = true;
+        }
+    }*/
     public void toggleMusic()
     {
         musicSource.mute = !musicSource.mute;

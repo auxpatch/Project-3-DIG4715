@@ -196,6 +196,10 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: c5396016748ac2744b5bd7c88b087caa, type: 3}
   - name: GameOver
     clip: {fileID: 8300000, guid: c5396016748ac2744b5bd7c88b087caa, type: 3}
+  musicClip:
+  - {fileID: 8300000, guid: 131e22d813190bc48a992249fca38e8e, type: 3}
+  - {fileID: 8300000, guid: 49132b069db8c9a47b81d5655f3b07a3, type: 3}
+  - {fileID: 8300000, guid: 23aa149c3c4deca42bb715f0b55cc63f, type: 3}
   musicSource: {fileID: 6629693692840111031}
   sfxSource: {fileID: 8968681870591610452}
 --- !u!1 &6294869349559754990
