@@ -689,12 +689,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176582117}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5f4df9aa66dee246b51e7d92fab703a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateToOpen: {fileID: 176582117}
+  Gate1: {fileID: 0}
+  Gate2: {fileID: 0}
+  Gate3: {fileID: 0}
 --- !u!4 &202041892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6599431990305364296, guid: 0102b25d931bbca47a89773266ecfa3e, type: 3}
@@ -3921,6 +3923,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 962209921104072034, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+--- !u!114 &1104129082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1104129076}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5f4df9aa66dee246b51e7d92fab703a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Gate1: {fileID: 1104129076}
+  Gate2: {fileID: 176582117}
+  Gate3: {fileID: 1171873395}
 --- !u!1001 &1107540103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4275,7 +4292,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f4df9aa66dee246b51e7d92fab703a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GateToOpen: {fileID: 0}
+  Gate1: {fileID: 0}
+  Gate2: {fileID: 0}
+  Gate3: {fileID: 0}
 --- !u!4 &1220284475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5982890070227510788, guid: b9eb696f51bb9654892aec65aec27992, type: 3}
@@ -4692,11 +4711,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: RoomsComplete
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4834,7 +4853,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7968512542304691821, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7543643741399859776, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -4866,6 +4885,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1122107772749259338, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1331909630518703443, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+      propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2550463727306718371, guid: da04815d2c38f764898021adb5c23b97, type: 3}
@@ -4924,6 +4947,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6805172578127772729, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1104129080}
+    - targetCorrespondingSourceObject: {fileID: 6805172578127772729, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1104129082}
     - targetCorrespondingSourceObject: {fileID: -6924516886751615871, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2002412157}
@@ -6062,7 +6088,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1825474650}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae952665eb2520418340cef78c9fbf5, type: 3}
   m_Name: 
@@ -6079,6 +6105,7 @@ MonoBehaviour:
     m_Bits: 8
   wallTorchTrigger: {fileID: 1380239046}
   jumpSound: {fileID: 8300000, guid: 2a842e8216336dc43ad9f5be14ce9abd, type: 3}
+  RoomsComplete: 3
   tr: {fileID: 1825474652}
 --- !u!96 &1825474652 stripped
 TrailRenderer:

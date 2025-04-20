@@ -43,6 +43,7 @@ public class AltCameraPlayerMovement : MonoBehaviour
     private float knockbackForce = 500f;
     private float knockbackTime = 0.5f;
     private float knockBackCounter;
+    public int RoomsComplete = 0;
 
 
 

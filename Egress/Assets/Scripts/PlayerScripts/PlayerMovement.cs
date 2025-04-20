@@ -3,14 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-
 public class Player : MonoBehaviour
 {
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     // Camera Rotation
     public float mouseSensitivity = 2f;
     public float controllerSensitivity = 0.1f;
     private float verticalRotation = 0f;
-    //private Transform cameraTransform;
+    private Transform cameraTransform;
 
     // Ground Movement
     private Rigidbody rb;
@@ -43,6 +43,7 @@ public class Player : MonoBehaviour
     private float knockbackForce = 500f;
     private float knockbackTime = 0.5f;
     private float knockBackCounter;
+    public int RoomsComplete = 0;
 
 
 
@@ -53,7 +54,7 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
-        //cameraTransform = Camera.main.transform;
+        cameraTransform = Camera.main.transform;
 
         // Set the raycast to be slightly beneath the player's feet
         playerHeight = GetComponent<CapsuleCollider>().height * transform.localScale.y;
@@ -166,7 +167,7 @@ public class Player : MonoBehaviour
         verticalRotation -= Input.GetAxis("Controller Y") * controllerSensitivity;
         verticalRotation = Mathf.Clamp(verticalRotation, -90f, 90f);
 
-        //cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
+        cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
     }
 
     void Jump()

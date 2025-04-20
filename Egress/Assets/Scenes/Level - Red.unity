@@ -1607,7 +1607,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: wallTorchTrigger
@@ -3169,7 +3169,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 600157698}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ae952665eb2520418340cef78c9fbf5, type: 3}
   m_Name: 
@@ -3186,6 +3186,7 @@ MonoBehaviour:
     m_Bits: 8
   wallTorchTrigger: {fileID: 562122138}
   jumpSound: {fileID: 8300000, guid: 2a842e8216336dc43ad9f5be14ce9abd, type: 3}
+  RoomsComplete: 0
   tr: {fileID: 600157707}
 --- !u!96 &600157707 stripped
 TrailRenderer:
