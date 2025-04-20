@@ -43,7 +43,7 @@ public class Player : MonoBehaviour
     private float knockbackForce = 500f;
     private float knockbackTime = 0.5f;
     private float knockBackCounter;
-    public int RoomsComplete = 0;
+    //public int RoomsComplete = 0;
 
 
 
@@ -68,6 +68,7 @@ public class Player : MonoBehaviour
         tr.emitting = false;
         //audioManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<soundManager>();
         anim = GetComponentInChildren<Animator>();
+        
         
     }
 
@@ -140,7 +141,8 @@ public class Player : MonoBehaviour
 
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
         // Shift key to sprint
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : MoveSpeed;
+
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) && isGrounded ? RunSpeed : MoveSpeed;
         Vector3 targetVelocity = movement * currentSpeed;
 
         // Apply movement to the Rigidbody
