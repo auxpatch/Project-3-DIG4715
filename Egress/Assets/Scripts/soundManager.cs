@@ -10,11 +10,11 @@ public class soundManager : MonoBehaviour
 {
     [SerializeField] Slider volumeSlider;
     public static soundManager Instance;
-    public Toggle toggle;
+    //public Toggle toggle;
 
-    public AudioSrc[] music, sfx;
+    public AudioSrc[] music, sfx, musicLoop;
     //public AudioClip[] musicClip;
-    public AudioSource musicSource, sfxSource;
+    public AudioSource musicSource, sfxSource, musicLoopSource;
 
     //private string lastScene;
 
@@ -83,6 +83,23 @@ public class soundManager : MonoBehaviour
 
     }
 
+    public void PlayMusicLoop(string name)
+    {
+        AudioSrc s = Array.Find(musicLoop, x => x.name == name);
+
+        if (s == null)
+        {
+            Debug.Log("Music not found.");
+        }
+
+        else
+        {
+            musicLoopSource.clip = s.clip;
+            musicLoopSource.Play();
+        }
+
+    }
+
     //finds and plays sound effects
     public void PlaySFX(string name)
     {
@@ -135,6 +152,7 @@ public class soundManager : MonoBehaviour
     public void toggleMusic()
     {
         musicSource.mute = !musicSource.mute;
+        musicLoopSource.mute = !musicLoopSource.mute;
     }
 
     public void toggleSfx()
@@ -145,6 +163,7 @@ public class soundManager : MonoBehaviour
     public void ChangeMusic(float volume)
     {
         musicSource.volume = volume;
+        musicLoopSource.volume = volume;
    
     }
 

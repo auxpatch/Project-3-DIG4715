@@ -5,18 +5,22 @@ using UnityEngine.SceneManagement;
 
 public class LevelChange : MonoBehaviour
 {
+    //AudioSource musicLoopSource;
+    //AudioSource musicSource;
     //public string LevelToLoad;
     public bool redLevel;
-    public bool lightroomLevel;
+    public bool blueLevel;
     public bool greenLevel;
     public bool hub;
     private bool redLevelComplete = false;
     private bool GreenLevelComplete = false;
-    private bool LightroomLevelComplete = false;
+    private bool blueLevelComplete = false;
+
     // Start is called before the first frame update
     void Start()
     {
-
+        //musicLoopSource = GetComponent<AudioSource>();
+        //musicSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -31,7 +35,10 @@ public class LevelChange : MonoBehaviour
         {
             if (hub) 
             {   
-                
+                soundManager.Instance.musicLoopSource.Stop();
+                soundManager.Instance.musicSource.Stop();
+                soundManager.Instance.PlayMusicLoop("Hub");
+
                 if (SceneManager.GetActiveScene().name == "Level - Red")
                 {
                     redLevelComplete = true;
@@ -40,16 +47,35 @@ public class LevelChange : MonoBehaviour
                 {
                     GreenLevelComplete = true;
                     Debug.Log("Green Level Complete");
-                } else if (SceneManager.GetActiveScene().name == "Light Room")
+                } else if (SceneManager.GetActiveScene().name == "Level - Blue")
                 {
-                    LightroomLevelComplete = true;
-                    Debug.Log("Light Room Complete");
+                    blueLevelComplete = true;
+                    Debug.Log("Blue Level Complete");
                 }
                 SceneManager.LoadScene("Hub World");
+
             }
-            else if (redLevel) {SceneManager.LoadScene("Level - Red");}
-            else if (lightroomLevel) {SceneManager.LoadScene("Light Room");}
-            else if (greenLevel) {SceneManager.LoadScene("Level - Green");}
+            else if (redLevel) 
+            {
+                soundManager.Instance.musicLoopSource.Stop();
+                soundManager.Instance.musicSource.Stop();
+                SceneManager.LoadScene("Level - Red");
+                soundManager.Instance.PlayMusic("Level1");
+            }
+            else if (blueLevel) 
+            {
+                soundManager.Instance.musicLoopSource.Stop();
+                soundManager.Instance.musicSource.Stop();                
+                SceneManager.LoadScene("Level - Blue");
+                soundManager.Instance.PlayMusic("Level1");
+            }
+            else if (greenLevel) 
+            {
+                soundManager.Instance.musicLoopSource.Stop();
+                soundManager.Instance.musicSource.Stop();                
+                SceneManager.LoadScene("Level - Green");
+                soundManager.Instance.PlayMusic("Level1");
+            }
             else {Debug.Log("No Level to Load!");}
             
         }    

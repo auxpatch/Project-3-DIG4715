@@ -5995,6 +5995,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 089988c0bcb2f454db708e93d2358101, type: 3}
   m_PrefabInstance: {fileID: 337062683}
   m_PrefabAsset: {fileID: 0}
+--- !u!82 &518351695 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6302512040918312670, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
+  m_PrefabInstance: {fileID: 2046851684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &524595924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8688,6 +8693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d031079ae1d364b44a73ba4cd2b2b44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicLoopSource: {fileID: 0}
+  musicSource: {fileID: 0}
 --- !u!114 &799515416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14252,6 +14259,7 @@ GameObject:
   - component: {fileID: 1236495634}
   - component: {fileID: 1236495633}
   - component: {fileID: 1236495632}
+  - component: {fileID: 1236495636}
   m_Layer: 0
   m_Name: HubLoader
   m_TagString: Untagged
@@ -14286,6 +14294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b1772737ed307ee4398a9a319487abc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicLoopSource: {fileID: 518351695}
+  musicSource: {fileID: 2046851685}
   redLevel: 0
   lightroomLevel: 0
   greenLevel: 0
@@ -14364,6 +14374,18 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236495630}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1236495636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236495630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f580b4e19a801742b576964da23da43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1252691149
 GameObject:
   m_ObjectHideFlags: 0
@@ -26710,6 +26732,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
+--- !u!82 &2046851685 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6629693692840111031, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
+  m_PrefabInstance: {fileID: 2046851684}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2050092051
 PrefabInstance:
   m_ObjectHideFlags: 0

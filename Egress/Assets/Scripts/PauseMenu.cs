@@ -27,10 +27,12 @@ public class PauseMenu : MonoBehaviour
             if(isPaused)
             {
                 ResumeGame();
+                //soundManager.Instance.musicLoopSource.UnPause();
             }
             else
             {
                 PauseGame();
+                //soundManager.Instance.musicLoopSource.Pause();
             }
         }
     }

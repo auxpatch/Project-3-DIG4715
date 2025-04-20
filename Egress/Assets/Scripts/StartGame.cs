@@ -6,6 +6,10 @@ using UnityEngine.SceneManagement;
 public class StartGame : MonoBehaviour
 {
 
+    void Start()
+    {
+
+    }
 
     public void QuitGame()
     {
@@ -16,7 +20,10 @@ public class StartGame : MonoBehaviour
 
     public void LoadSceneStart()
     {
-       SceneManager.LoadScene("Level - Tutorial", LoadSceneMode.Single);
+        soundManager.Instance.musicLoopSource.Stop();
+        soundManager.Instance.musicSource.Stop();
+        SceneManager.LoadScene("Level - Tutorial", LoadSceneMode.Single);
+        soundManager.Instance.PlayMusicLoop("Tutorial");
         Debug.Log("Next Scene");
     }
 

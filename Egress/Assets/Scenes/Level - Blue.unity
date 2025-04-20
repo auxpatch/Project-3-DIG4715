@@ -5442,7 +5442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1391325816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9180,6 +9180,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1988927431}
     m_Modifications:
+    - target: {fileID: 897271821308308043, guid: 00202e9c091ae5f44893496c1fcf681e, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4142716652764410703, guid: 00202e9c091ae5f44893496c1fcf681e, type: 3}
       propertyPath: m_TagString
       value: Torch
