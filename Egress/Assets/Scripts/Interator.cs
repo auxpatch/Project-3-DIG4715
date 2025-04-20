@@ -9,6 +9,9 @@ public class Interator : MonoBehaviour
     public bool isPaused;
     bool isPlayerInRange = false;
 
+    public AudioClip stone1;
+    public AudioClip stone2;
+
     public Text interactText; 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,10 +28,12 @@ public class Interator : MonoBehaviour
         if (isPaused)
         {
             ResumeGame();
+            soundManager.Instance.PlaySFX("stone1");
         }
         else
         {
             PauseGame();
+            soundManager.Instance.PlaySFX("stone2");
         }
     }
     }
