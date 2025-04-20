@@ -40,7 +40,7 @@ public class Player : MonoBehaviour
     Animator anim;
 
     //Player Knockback
-    private float knockbackForce = 600f;
+    private float knockbackForce = 500f;
     private float knockbackTime = 0.5f;
     private float knockBackCounter;
 
