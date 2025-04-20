@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6211461829404857612}
@@ -165,6 +165,7 @@ MonoBehaviour:
     m_Bits: 8
   wallTorchTrigger: {fileID: 365717981132774897}
   jumpSound: {fileID: 8300000, guid: 2a842e8216336dc43ad9f5be14ce9abd, type: 3}
+  RoomsComplete: 0
   tr: {fileID: 7996649993788301740}
 --- !u!96 &7996649993788301740
 TrailRenderer:
