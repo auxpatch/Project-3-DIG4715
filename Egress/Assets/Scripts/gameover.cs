@@ -36,7 +36,7 @@ public class gameover : MonoBehaviour
     public void ToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("Start Screen");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 }

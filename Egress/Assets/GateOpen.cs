@@ -58,7 +58,7 @@ public class GateOpen : MonoBehaviour
         if (playerChar.RoomsComplete == 4)
         {
             Debug.Log("Green Room Gate Open");
-            GreenGate.transform.position = GreenGate.transform.position + new Vector3(0,2.5f,0);
+            //GreenGate.transform.position = GreenGate.transform.position + new Vector3(0,2.5f,0);
             RedGem.transform.position = RedGem.transform.position + new Vector3(0,2.5f,0);
             BlueGem.transform.position = BlueGem.transform.position + new Vector3(0,2.5f,0);
             GreenGem.transform.position = GreenGem.transform.position + new Vector3(0,2.5f,0);
