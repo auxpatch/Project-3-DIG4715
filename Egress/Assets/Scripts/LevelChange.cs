@@ -39,11 +39,11 @@ public class LevelChange : MonoBehaviour
             
             if (hub) 
             {   
-                /*
+                
                 soundManager.Instance.musicLoopSource.Stop();
                 soundManager.Instance.musicSource.Stop();
                 soundManager.Instance.PlayMusicLoop("Hub");
-                */
+                
 
                 if (SceneManager.GetActiveScene().name == "Level - Red")
                 {
@@ -69,29 +69,23 @@ public class LevelChange : MonoBehaviour
 
             }
             else if (redLevel) 
-            {
-                /*
+            {    
                 soundManager.Instance.musicLoopSource.Stop();
                 soundManager.Instance.musicSource.Stop();
-                */
                 SceneManager.LoadScene("Level - Red");
                 soundManager.Instance.PlayMusic("Level1");
             }
             else if (blueLevel) 
             {
-                /*
                 soundManager.Instance.musicLoopSource.Stop();
-                soundManager.Instance.musicSource.Stop();  
-                */              
+                soundManager.Instance.musicSource.Stop();            
                 SceneManager.LoadScene("Level - Blue");
                 soundManager.Instance.PlayMusic("Level1");
             }
             else if (greenLevel) 
             {
-                /*
                 soundManager.Instance.musicLoopSource.Stop();
-                soundManager.Instance.musicSource.Stop();  
-                */              
+                soundManager.Instance.musicSource.Stop();            
                 SceneManager.LoadScene("Level - Green");
                 soundManager.Instance.PlayMusic("Level1");
             }
