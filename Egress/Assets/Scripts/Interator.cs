@@ -9,6 +9,7 @@ public class Interator : MonoBehaviour
     public bool isPaused;
     bool isPlayerInRange = false;
 
+    public AudioSource audioSource;
     public AudioClip stone1;
     public AudioClip stone2;
 
@@ -28,12 +29,12 @@ public class Interator : MonoBehaviour
         if (isPaused)
         {
             ResumeGame();
-            soundManager.Instance.PlaySFX("stone1");
+             audioSource.PlayOneShot(stone1);
         }
         else
         {
             PauseGame();
-            soundManager.Instance.PlaySFX("stone2");
+             audioSource.PlayOneShot(stone2);
         }
     }
     }
