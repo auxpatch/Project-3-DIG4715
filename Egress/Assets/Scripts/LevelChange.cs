@@ -16,6 +16,8 @@ public class LevelChange : MonoBehaviour
     private bool GreenLevelComplete = false;
     private bool blueLevelComplete = false;
     PlayerController playerController;
+    public GameObject WinScreen;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -88,6 +90,11 @@ public class LevelChange : MonoBehaviour
                 soundManager.Instance.musicSource.Stop();            
                 SceneManager.LoadScene("Level - Green");
                 soundManager.Instance.PlayMusic("Level1");
+            }
+            else if (playerController.RoomsComplete == 4)
+            {
+                Debug.Log("Win");
+                WinScreen.SetActive(true);
             }
             else {Debug.Log("No Level to Load!");}
             
