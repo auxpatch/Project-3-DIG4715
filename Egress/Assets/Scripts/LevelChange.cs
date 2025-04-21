@@ -95,6 +95,9 @@ public class LevelChange : MonoBehaviour
             {
                 Debug.Log("Win");
                 WinScreen.SetActive(true);
+                Time.timeScale = 0f;
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
             else {Debug.Log("No Level to Load!");}
             
