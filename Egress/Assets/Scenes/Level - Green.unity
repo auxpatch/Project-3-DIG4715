@@ -16507,6 +16507,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5066104880310299993, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: b82cec221f5e92c4b881cdd76506bd5c, type: 3}
     - target: {fileID: 8479631382305799301, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -16587,6 +16591,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8777894565963096883, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
+      propertyPath: m_SpriteState.m_PressedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cc5fe0b6f7a5a4342a0513556af87d9f, type: 3}
+    - target: {fileID: 8777894565963096883, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
+      propertyPath: m_SpriteState.m_HighlightedSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9620b81e75db82d43b48e7ff7ac06f74, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 6346984332968520207, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
