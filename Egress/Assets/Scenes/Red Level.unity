@@ -181,12 +181,18 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 4a8f869c977b22949be4ad116db1cb1c, type: 3}
 --- !u!4 &64586896 stripped
 Transform:
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
   m_CorrespondingSourceObject: {fileID: 2760633681348362576, guid: 4a8f869c977b22949be4ad116db1cb1c, type: 3}
   m_PrefabInstance: {fileID: 64586895}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &72244917
 =======
+=======
+  m_CorrespondingSourceObject: {fileID: 6754239602958599055, guid: 1f6bc2ed249d5cc4082ef22bffb32699, type: 3}
+  m_PrefabInstance: {fileID: 34499953}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1001 &131444306
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
@@ -317,9 +323,75 @@ Transform:
   m_PrefabInstance: {fileID: 78981018}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &125433543
 =======
 --- !u!1001 &210847870
+=======
+--- !u!1001 &210847870
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2139377217}
+    m_Modifications:
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7879715
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.998025
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.120493
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144595831426646539, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_Name
+      value: Pillar_A (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+--- !u!4 &210847871 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+  m_PrefabInstance: {fileID: 210847870}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &211853720
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -765,6 +837,9 @@ Transform:
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2185368209103697560, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
   m_PrefabInstance: {fileID: 824757182}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_PrefabAsset: {fileID: 0}
 --- !u!64 &222346036
@@ -854,6 +929,7 @@ PrefabInstance:
     - target: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_LocalPosition.x
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
       value: 0.13698
       objectReference: {fileID: 0}
     - target: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
@@ -863,6 +939,17 @@ PrefabInstance:
     - target: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_LocalPosition.z
       value: -0.95992
+=======
+      value: 8.015705
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 15.068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.756
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 =======
       value: 8.015705
       objectReference: {fileID: 0}
@@ -916,6 +1003,7 @@ PrefabInstance:
       addedObject: {fileID: 1769251628}
   m_SourcePrefab: {fileID: 100100000, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!4 &347757383 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6754239602958599055, guid: 1f6bc2ed249d5cc4082ef22bffb32699, type: 3}
@@ -923,6 +1011,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &363674636
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &361012808
 GameObject:
   m_ObjectHideFlags: 0
@@ -1129,6 +1219,7 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!4 &442307492 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2760633681348362576, guid: 4a8f869c977b22949be4ad116db1cb1c, type: 3}
@@ -1138,6 +1229,10 @@ Transform:
 =======
 --- !u!4 &387215294 stripped
 Transform:
+=======
+--- !u!4 &387215294 stripped
+Transform:
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_CorrespondingSourceObject: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
   m_PrefabInstance: {fileID: 1452783117}
   m_PrefabAsset: {fileID: 0}
@@ -1210,8 +1305,11 @@ Transform:
   m_PrefabInstance: {fileID: 729798783}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &478991672
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &436378032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2185368209103697560, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
@@ -1240,12 +1338,16 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: 7561708892868237596, guid: d0d0f28a67e96f04994e41d2c7e7001a, type: 3}
 --- !u!1001 &468671269
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_TransformParent: {fileID: 1546795332}
     m_Modifications:
@@ -1291,6 +1393,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5408963823304105734, guid: 52cbf0b62897cd14cb2adad1753a460b, type: 3}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_TransformParent: {fileID: 1194479706}
     m_Modifications:
     - target: {fileID: 5038477155518306858, guid: 6e4fdc79fb3f90742804a18c8727ae3f, type: 3}
@@ -1582,7 +1686,10 @@ MonoBehaviour:
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!4 &545831027 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3200860281703400963, guid: cefb7478e7b54f94b9d81cf52d9488ce, type: 3}
@@ -1952,6 +2059,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
   m_PrefabInstance: {fileID: 329817551}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &612985715
 GameObject:
@@ -2388,9 +2498,73 @@ CanvasRenderer:
   m_GameObject: {fileID: 666203404}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &729798783
 =======
 --- !u!1001 &678016706
+=======
+--- !u!1001 &678016706
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1037063417}
+    m_Modifications:
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12.189449
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900283499080966938, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      propertyPath: m_Name
+      value: Block_A (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2900283499080966938, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1854355846}
+  m_SourcePrefab: {fileID: 100100000, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+--- !u!1001 &686999637
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -2648,6 +2822,7 @@ GameObject:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
   serializedVersion: 6
   m_Component:
   - component: {fileID: 753394792}
@@ -2660,10 +2835,81 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &753394792
 Transform:
+=======
+--- !u!1001 &816686628
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1442154896}
+    m_Modifications:
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7879713
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.497038
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.869999
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144595831426646539, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_Name
+      value: Pillar_A (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4159839848757052798, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+--- !u!1 &818288407 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6912226231173729764, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+  m_PrefabInstance: {fileID: 1908973715}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &818288411
+MeshCollider:
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
   m_GameObject: {fileID: 753394791}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -2691,6 +2937,94 @@ Transform:
 GameObject:
 =======
 --- !u!1001 &816686628
+=======
+  m_GameObject: {fileID: 818288407}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7561708892868237596, guid: d0d0f28a67e96f04994e41d2c7e7001a, type: 3}
+--- !u!1001 &824757182
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1037063417}
+    m_Modifications:
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.49
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 14.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.38268343
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.92387956
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 135
+      objectReference: {fileID: 0}
+    - target: {fileID: 1062012068532388160, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772798600740421964, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      propertyPath: m_Name
+      value: L (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 389710260566052785, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 284234668}
+    - targetCorrespondingSourceObject: {fileID: 2185368209103697560, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 222346036}
+    - targetCorrespondingSourceObject: {fileID: 6912226231173729764, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1508521148}
+    - targetCorrespondingSourceObject: {fileID: 6699799094687971579, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1473962093}
+  m_SourcePrefab: {fileID: 100100000, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
+--- !u!1001 &825691137
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -3103,7 +3437,11 @@ Transform:
   m_PrefabInstance: {fileID: 1270713300767518291}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &958352776
+=======
+--- !u!1001 &848634660
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 =======
 --- !u!1001 &848634660
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
@@ -3112,6 +3450,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_TransformParent: {fileID: 152408885}
     m_Modifications:
@@ -3159,6 +3498,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallMoulding (7)
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_TransformParent: {fileID: 1634618667}
     m_Modifications:
     - target: {fileID: 2760633681348362576, guid: 4a8f869c977b22949be4ad116db1cb1c, type: 3}
@@ -3471,6 +3812,9 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &962207891
 GameObject:
@@ -3493,6 +3837,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
   m_IsActive: 1
 --- !u!114 &962207892
 MonoBehaviour:
@@ -3507,6 +3852,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   volumeSlider: {fileID: 1131106080}
+=======
+  m_IsActive: 0
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 =======
   m_IsActive: 0
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
@@ -3609,7 +3957,11 @@ RectTransform:
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &969402134
+=======
+--- !u!1001 &975995062
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 =======
 --- !u!1001 &975995062
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
@@ -3618,6 +3970,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_TransformParent: {fileID: 152408885}
     m_Modifications:
@@ -3665,6 +4018,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: WallMoulding (8)
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_TransformParent: {fileID: 1037063417}
     m_Modifications:
     - target: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
@@ -3710,11 +4065,15 @@ PrefabInstance:
     - target: {fileID: 2900283499080966938, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
       propertyPath: m_Name
       value: Block_A (5)
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 977904319d9c7d8429e352e67cd6e6c4, type: 3}
@@ -3732,6 +4091,106 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
   m_PrefabInstance: {fileID: 975995062}
+=======
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2900283499080966938, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 975995065}
+  m_SourcePrefab: {fileID: 100100000, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+--- !u!4 &975995063 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+  m_PrefabInstance: {fileID: 975995062}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &975995064 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2900283499080966938, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+  m_PrefabInstance: {fileID: 975995062}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &975995065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975995064}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7561708892868237596, guid: d0d0f28a67e96f04994e41d2c7e7001a, type: 3}
+--- !u!1001 &998521166
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 2139377217}
+    m_Modifications:
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7879715
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.870001
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144595831426646539, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_Name
+      value: Pillar_A (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+--- !u!4 &998521167 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+  m_PrefabInstance: {fileID: 998521166}
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &975995064 stripped
 GameObject:
@@ -4263,8 +4722,11 @@ CanvasRenderer:
   m_GameObject: {fileID: 1042075925}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!4 &1053745118 stripped
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1001 &1042842680
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4389,6 +4851,7 @@ Transform:
   m_PrefabInstance: {fileID: 4672133401648434573}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &1080769759
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4453,6 +4916,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1108945879
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &1083603570
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 GameObject:
@@ -4632,12 +5097,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1103498468
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_TransformParent: {fileID: 152408885}
     m_Modifications:
@@ -4696,6 +5165,8 @@ Transform:
   m_PrefabInstance: {fileID: 1126075996}
   m_PrefabAsset: {fileID: 0}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_TransformParent: {fileID: 1037063417}
     m_Modifications:
     - target: {fileID: 88657874575498443, guid: cefb7478e7b54f94b9d81cf52d9488ce, type: 3}
@@ -4755,6 +5226,9 @@ Transform:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cefb7478e7b54f94b9d81cf52d9488ce, type: 3}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &1131106079
 GameObject:
@@ -4847,8 +5321,11 @@ RectTransform:
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &1274830671
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &1177899285
 GameObject:
   m_ObjectHideFlags: 0
@@ -5806,6 +6283,9 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 7561708892868237596, guid: d0d0f28a67e96f04994e41d2c7e7001a, type: 3}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &1420480155
 GameObject:
@@ -6228,6 +6708,9 @@ Transform:
 Transform:
   m_CorrespondingSourceObject: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
   m_PrefabInstance: {fileID: 509892826}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1530626810
@@ -6836,6 +7319,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 1656645691}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &1666624460
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6893,6 +7377,8 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f6bc2ed249d5cc4082ef22bffb32699, type: 3}
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 =======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &1686416075
@@ -7162,7 +7648,11 @@ CanvasRenderer:
   m_GameObject: {fileID: 1704611803}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &1726501218
+=======
+--- !u!1001 &1716009599
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 =======
 --- !u!1001 &1716009599
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
@@ -7171,6 +7661,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_TransformParent: {fileID: 814219356}
     m_Modifications:
@@ -7216,6 +7707,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5408963823304105734, guid: 52cbf0b62897cd14cb2adad1753a460b, type: 3}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_TransformParent: {fileID: 361012809}
     m_Modifications:
     - target: {fileID: 6264561570790594869, guid: 1f6bc2ed249d5cc4082ef22bffb32699, type: 3}
@@ -7408,7 +7901,10 @@ CanvasRenderer:
   m_GameObject: {fileID: 1727211457}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1001 &1733916056
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7525,6 +8021,9 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &1746255426
 GameObject:
@@ -7967,12 +8466,16 @@ MeshCollider:
   m_CookingOptions: 30
   m_Mesh: {fileID: 7561708892868237596, guid: d0d0f28a67e96f04994e41d2c7e7001a, type: 3}
 --- !u!1001 &1861005982
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_TransformParent: {fileID: 144753625}
     m_Modifications:
@@ -8021,6 +8524,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_TransformParent: {fileID: 2139377217}
     m_Modifications:
     - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
@@ -8067,11 +8572,15 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pillar_A (4)
       objectReference: {fileID: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
   m_SourcePrefab: {fileID: 100100000, guid: 52cbf0b62897cd14cb2adad1753a460b, type: 3}
 --- !u!4 &1808543488 stripped
@@ -8266,12 +8775,17 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f6bc2ed249d5cc4082ef22bffb32699, type: 3}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_SourcePrefab: {fileID: 100100000, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
 --- !u!4 &1861005983 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
   m_PrefabInstance: {fileID: 1861005982}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &1862144270
 GameObject:
@@ -8310,8 +8824,11 @@ RectTransform:
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &1863925012
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!4 &1872667552 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
@@ -8327,8 +8844,11 @@ PrefabInstance:
     m_TransformParent: {fileID: 814219356}
     m_Modifications:
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     - target: {fileID: 3813771481710335715, guid: 6c9052114db0d934e8ec61ef59445875, type: 3}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     - target: {fileID: 879533452197438359, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -8338,6 +8858,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
       propertyPath: m_LocalPosition.x
       value: 0.9530368
@@ -8381,11 +8902,56 @@ PrefabInstance:
     - target: {fileID: 4586613134557203545, guid: 6c9052114db0d934e8ec61ef59445875, type: 3}
       propertyPath: m_Name
       value: Pillar_C_Shaded
+=======
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2245420357055092392, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+      propertyPath: m_Name
+      value: CircularWallsTop
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
   m_SourcePrefab: {fileID: 100100000, guid: 6c9052114db0d934e8ec61ef59445875, type: 3}
 --- !u!4 &1863925013 stripped
 Transform:
@@ -8395,6 +8961,14 @@ Transform:
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &1894604436
 =======
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+--- !u!4 &1876939259 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1468882971066059794, guid: 54434e5f1c6ebd64c9f36e95c4559901, type: 3}
+  m_PrefabInstance: {fileID: 1876939258}
+  m_PrefabAsset: {fileID: 0}
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1001 &1891800352
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
@@ -8748,6 +9322,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2760633681348362576, guid: 4a8f869c977b22949be4ad116db1cb1c, type: 3}
   m_PrefabInstance: {fileID: 1894604436}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!4 &1929641670 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1440432411889248235, guid: 977904319d9c7d8429e352e67cd6e6c4, type: 3}
@@ -8792,6 +9367,8 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1440432411889248235, guid: 977904319d9c7d8429e352e67cd6e6c4, type: 3}
   m_PrefabInstance: {fileID: 2137826248}
   m_PrefabAsset: {fileID: 0}
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1001 &2029952619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8934,7 +9511,10 @@ Transform:
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &2043273330
+=======
+--- !u!1001 &2039848492
 =======
 --- !u!1001 &2039848492
 PrefabInstance:
@@ -8998,6 +9578,81 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
 --- !u!1001 &2042400603
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1442154896}
+    m_Modifications:
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 3.7879715
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.998025
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -13.120493
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 336005757279688881, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1144595831426646539, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_Name
+      value: Pillar_A (6)
+      objectReference: {fileID: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+    - target: {fileID: 4159839848757052798, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+      propertyPath: m_Convex
+      value: 1
+      objectReference: {fileID: 0}
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+  m_SourcePrefab: {fileID: 100100000, guid: 90c500dc8a3d7904bb38451a3d7f2540, type: 3}
+--- !u!1001 &2042400603
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+--- !u!4 &2042400604 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2554720581154355616, guid: e2a5113ebba600d4b9df72f37337fc0f, type: 3}
+  m_PrefabInstance: {fileID: 2042400603}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2054806850
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9131,14 +9786,77 @@ Transform:
   m_PrefabInstance: {fileID: 2045814743}
   m_PrefabAsset: {fileID: 0}
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &2074927432
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!4 &2080401575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3200860281703400963, guid: cefb7478e7b54f94b9d81cf52d9488ce, type: 3}
   m_PrefabInstance: {fileID: 3350778542741454116}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2102933789
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+=======
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1037063417}
+    m_Modifications:
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -12.01732
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.000060990453
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.3255906
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 828551068411962914, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_Name
+      value: ramp (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+--- !u!1001 &2106428551
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -9391,6 +10109,7 @@ CanvasRenderer:
   m_GameObject: {fileID: 2131772250}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &2137826248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9449,6 +10168,8 @@ PrefabInstance:
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 977904319d9c7d8429e352e67cd6e6c4, type: 3}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &2133653930 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 389710260566052785, guid: b128d4a34acd82a4db3f03a1a9886dfa, type: 3}
@@ -9512,6 +10233,9 @@ Transform:
   - {fileID: 1494160421}
   m_Father: {fileID: 1194479706}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1 &2147064982
 GameObject:
@@ -9660,7 +10384,11 @@ CanvasRenderer:
   m_GameObject: {fileID: 2147064982}
   m_CullTransparentMesh: 1
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 --- !u!1001 &1270713300767518291
+=======
+--- !u!1001 &1680731502435582894
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 =======
 --- !u!1001 &1680731502435582894
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
@@ -9669,6 +10397,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
     m_TransformParent: {fileID: 801307206}
     m_Modifications:
@@ -9714,6 +10443,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6754239602958599055, guid: 1f6bc2ed249d5cc4082ef22bffb32699, type: 3}
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
     m_TransformParent: {fileID: 1194479706}
     m_Modifications:
     - target: {fileID: 5593844781912950808, guid: 18578188592e55f479d39ac26b564a03, type: 3}
@@ -9819,6 +10550,9 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3200860281703400963, guid: cefb7478e7b54f94b9d81cf52d9488ce, type: 3}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
@@ -9827,6 +10561,7 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
 <<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
   m_SourcePrefab: {fileID: 100100000, guid: 1f6bc2ed249d5cc4082ef22bffb32699, type: 3}
 --- !u!1001 &4672133401648434573
@@ -9888,6 +10623,8 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 4a8f869c977b22949be4ad116db1cb1c, type: 3}
 --- !u!1001 &8211026329353011625
 =======
+=======
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_SourcePrefab: {fileID: 100100000, guid: cefb7478e7b54f94b9d81cf52d9488ce, type: 3}
 --- !u!1001 &3518611810234781406
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
@@ -10071,6 +10808,123 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+=======
+  m_SourcePrefab: {fileID: 100100000, guid: 207534768e3b16b4fbfed478722f4b2b, type: 3}
+--- !u!1001 &4614275772778209162
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1194479706}
+    m_Modifications:
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.632
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 571226395079423641, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 828551068411962914, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+      propertyPath: m_Name
+      value: ramp
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dfd435698d4010742b107925eb41ae5f, type: 3}
+--- !u!1001 &6303680262776256737
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1194479706}
+    m_Modifications:
+    - target: {fileID: 4834190638598823891, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_Name
+      value: hover disc
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6960573339191950352, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
   m_SourcePrefab: {fileID: 100100000, guid: 239cbc9d6687eb54e9c47a1397239393, type: 3}
 --- !u!1001 &6482443728578839706
 PrefabInstance:
@@ -10191,6 +11045,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 207d4b76ae7fd614e98c46886cf4870f, type: 3}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -10220,4 +11077,7 @@ SceneRoots:
   - {fileID: 1425011080}
   - {fileID: 1037063417}
   - {fileID: 1194479706}
+<<<<<<< Updated upstream:Egress/Assets/Scenes/Red Level.unity
+>>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
+=======
 >>>>>>> Stashed changes:Egress/Assets/Scenes/Level - Green.unity
