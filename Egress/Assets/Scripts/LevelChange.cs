@@ -48,17 +48,17 @@ public class LevelChange : MonoBehaviour
                 if (SceneManager.GetActiveScene().name == "Level - Red")
                 {
                     redLevelComplete = true;
-                    playerController.RoomsComplete = 3;
+                    playerController.RoomsComplete = 2;
                     Debug.Log("Red Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Green")
                 {
                     GreenLevelComplete = true;
-                    playerController.RoomsComplete = 2;
+                    playerController.RoomsComplete = 4;
                     Debug.Log("Green Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Blue")
                 {
                     blueLevelComplete = true;
-                    playerController.RoomsComplete = 4;
+                    playerController.RoomsComplete = 3;
                     Debug.Log("Blue Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Tutorial")
                 {

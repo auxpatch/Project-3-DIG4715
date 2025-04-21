@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
 }
     void Start()
     {
-        RoomsComplete = 0;
+        //RoomsComplete = 0;
         
     }
 

@@ -694,9 +694,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b5f4df9aa66dee246b51e7d92fab703a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gate1: {fileID: 0}
-  Gate2: {fileID: 0}
-  Gate3: {fileID: 0}
+  GreenGate: {fileID: 0}
+  RedGate: {fileID: 0}
+  BlueGate: {fileID: 0}
+  GreenGem: {fileID: 0}
+  RedGem: {fileID: 0}
+  BlueGem: {fileID: 0}
+  WinDoor: {fileID: 0}
 --- !u!1 &191695570
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +720,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &191695571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3872,7 +3876,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497757998069974698, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.75
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 7497757998069974698, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4003,6 +4007,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -868920476135329042, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+--- !u!1 &997440274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1859910940490814232, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
+  m_PrefabInstance: {fileID: 954798445}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1002202048 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5982890070227510788, guid: b9eb696f51bb9654892aec65aec27992, type: 3}
@@ -4048,7 +4057,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2e9b516d42644f449190d4346ecebf6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RoomsComplete: 0
+  RoomsComplete: 4
 --- !u!4 &1071746913
 Transform:
   m_ObjectHideFlags: 0
@@ -4315,14 +4324,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1104129076}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5f4df9aa66dee246b51e7d92fab703a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gate1: {fileID: 1104129076}
-  Gate2: {fileID: 176582117}
-  Gate3: {fileID: 1171873395}
+  GreenGate: {fileID: 0}
+  RedGate: {fileID: 1104129076}
+  BlueGate: {fileID: 0}
+  GreenGem: {fileID: 0}
+  RedGem: {fileID: 0}
+  BlueGem: {fileID: 0}
+  WinDoor: {fileID: 0}
 --- !u!1001 &1107540103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4672,14 +4685,18 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1171873395}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5f4df9aa66dee246b51e7d92fab703a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gate1: {fileID: 0}
-  Gate2: {fileID: 0}
-  Gate3: {fileID: 0}
+  GreenGate: {fileID: 1104129076}
+  RedGate: {fileID: 176582117}
+  BlueGate: {fileID: 1171873395}
+  GreenGem: {fileID: 1522275966}
+  RedGem: {fileID: 1430616968}
+  BlueGem: {fileID: 997440274}
+  WinDoor: {fileID: 1612405774}
 --- !u!4 &1220284475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5982890070227510788, guid: b9eb696f51bb9654892aec65aec27992, type: 3}
@@ -5767,6 +5784,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1383863671}
   m_CullTransparentMesh: 1
+--- !u!1 &1430616968 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1859910940490814232, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
+  m_PrefabInstance: {fileID: 1922387197}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1446205013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6033,6 +6055,11 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -629719859055844128, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+--- !u!1 &1522275966 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1859910940490814232, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
+  m_PrefabInstance: {fileID: 6150387596722861538}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1537648622
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6919,7 +6946,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497757998069974698, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.75
+      value: -3.25
       objectReference: {fileID: 0}
     - target: {fileID: 7497757998069974698, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8022,7 +8049,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7497757998069974698, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -2.5
       objectReference: {fileID: 0}
     - target: {fileID: 7497757998069974698, guid: c7114a05eeb651847b26e46e719ac3b1, type: 3}
       propertyPath: m_LocalPosition.z
