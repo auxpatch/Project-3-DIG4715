@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     private float playerHeight;
     private float raycastDistance;
 
-    // Air Dash 
+    // Air Dash Trail
     private bool dashing = true;
     private float dashingPower = 150f;
     private float dashingTime = 0.3f;
