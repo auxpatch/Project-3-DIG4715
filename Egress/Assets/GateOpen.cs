@@ -12,6 +12,10 @@ public class GateOpen : MonoBehaviour
     public GameObject BlueGem;
     public GameObject WinDoor;
 
+    public bool RedRoomComplete;
+    public bool GreenRoomComplete;
+    public bool BlueRoomComplete;
+
     void Start()
     {
         
@@ -34,34 +38,34 @@ public class GateOpen : MonoBehaviour
     public void OpenGate()
     {
         Debug.Log(playerChar.RoomsComplete);
-        if (playerChar.RoomsComplete == 1)
+        if (playerChar.BlueRoomComplete == true)
         {
             Debug.Log("Red Room Gate Open");
-            RedGate.transform.position = RedGate.transform.position + new Vector3(0,2.5f,0);
-            
+            BlueGate.transform.position = BlueGate.transform.position + new Vector3(0,-2.5f,0);
+            BlueGem.transform.position = BlueGem.transform.position + new Vector3(0,2.5f,0);
         }
         
-        if (playerChar.RoomsComplete == 2)
+        if (playerChar.RedRoomComplete == true)
         {
             Debug.Log("Blue Room Gate Open");
-            BlueGate.transform.position = BlueGate.transform.position + new Vector3(0,2.5f,0);
+            RedGate.transform.position = RedGate.transform.position + new Vector3(0,-2.5f,0);
             RedGem.transform.position = RedGem.transform.position + new Vector3(0,2.5f,0);
         }
 
-        if (playerChar.RoomsComplete == 3)
+        if (playerChar.GreenRoomComplete == true)
         {
             Debug.Log("Green Room Gate Open");
-            GreenGate.transform.position = GreenGate.transform.position + new Vector3(0,2.5f,0);
-            RedGem.transform.position = RedGem.transform.position + new Vector3(0,2.5f,0);
-            BlueGem.transform.position = BlueGem.transform.position + new Vector3(0,2.5f,0);
+            GreenGate.transform.position = GreenGate.transform.position + new Vector3(0,-2.5f,0);
+            GreenGem.transform.position = GreenGem.transform.position + new Vector3(0,2.5f,0);
+            
         }
-        if (playerChar.RoomsComplete == 4)
+        if (playerChar.GreenRoomComplete && playerChar.RedRoomComplete && playerChar.BlueRoomComplete)
         {
             Debug.Log("Green Room Gate Open");
             //GreenGate.transform.position = GreenGate.transform.position + new Vector3(0,2.5f,0);
-            RedGem.transform.position = RedGem.transform.position + new Vector3(0,2.5f,0);
-            BlueGem.transform.position = BlueGem.transform.position + new Vector3(0,2.5f,0);
-            GreenGem.transform.position = GreenGem.transform.position + new Vector3(0,2.5f,0);
+            //RedGem.transform.position = RedGem.transform.position + new Vector3(0,2.5f,0);
+            //BlueGem.transform.position = BlueGem.transform.position + new Vector3(0,2.5f,0);
+            //GreenGem.transform.position = GreenGem.transform.position + new Vector3(0,2.5f,0);
             Destroy(WinDoor);
         }
     }

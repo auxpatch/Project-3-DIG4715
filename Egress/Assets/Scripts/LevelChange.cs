@@ -17,6 +17,9 @@ public class LevelChange : MonoBehaviour
     private bool blueLevelComplete = false;
     PlayerController playerController;
     public GameObject WinScreen;
+     public bool RedRoomComplete;
+    public bool GreenRoomComplete;
+    public bool BlueRoomComplete;
     
 
     // Start is called before the first frame update
@@ -50,16 +53,19 @@ public class LevelChange : MonoBehaviour
                 if (SceneManager.GetActiveScene().name == "Level - Red")
                 {
                     redLevelComplete = true;
+                    playerController.RedRoomComplete = true;
                     playerController.RoomsComplete = 2;
                     Debug.Log("Red Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Green")
                 {
                     GreenLevelComplete = true;
+                    playerController.GreenRoomComplete = true;
                     playerController.RoomsComplete = 4;
                     Debug.Log("Green Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Blue")
                 {
                     blueLevelComplete = true;
+                    playerController.BlueRoomComplete = true;
                     playerController.RoomsComplete = 3;
                     Debug.Log("Blue Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Tutorial")

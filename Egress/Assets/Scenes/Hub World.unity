@@ -701,6 +701,9 @@ MonoBehaviour:
   RedGem: {fileID: 0}
   BlueGem: {fileID: 0}
   WinDoor: {fileID: 0}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!1 &191695570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1826,6 +1829,9 @@ MonoBehaviour:
   greenLevel: 0
   hub: 0
   WinScreen: {fileID: 0}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!65 &322218101
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3771,6 +3777,9 @@ MonoBehaviour:
   greenLevel: 1
   hub: 0
   WinScreen: {fileID: 0}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!65 &859886864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4196,6 +4205,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoomsComplete: 4
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!4 &1071746913
 Transform:
   m_ObjectHideFlags: 0
@@ -4474,6 +4486,9 @@ MonoBehaviour:
   RedGem: {fileID: 0}
   BlueGem: {fileID: 0}
   WinDoor: {fileID: 0}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!1001 &1107540103
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4835,6 +4850,9 @@ MonoBehaviour:
   RedGem: {fileID: 1430616968}
   BlueGem: {fileID: 997440274}
   WinDoor: {fileID: 1612405774}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!4 &1220284475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5982890070227510788, guid: b9eb696f51bb9654892aec65aec27992, type: 3}
@@ -5250,8 +5268,16 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: RunSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: dashDistance
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: RoomsComplete
@@ -5393,7 +5419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -7968512542304691821, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: -7543643741399859776, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -5429,7 +5455,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1331909630518703443, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2101588168048969656, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 2550463727306718371, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       propertyPath: m_Layer
@@ -5687,6 +5717,9 @@ MonoBehaviour:
   greenLevel: 0
   hub: 0
   WinScreen: {fileID: 0}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!65 &1360784719
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6303,6 +6336,9 @@ MonoBehaviour:
   greenLevel: 0
   hub: 0
   WinScreen: {fileID: 600348330}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!65 &1589406218
 BoxCollider:
   m_ObjectHideFlags: 0

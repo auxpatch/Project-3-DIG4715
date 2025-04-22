@@ -8,6 +8,9 @@ public class PlayerController : MonoBehaviour
 {
     public int RoomsComplete = 0;
     private PlayerController playerCont;
+    public bool RedRoomComplete = false;
+    public bool GreenRoomComplete = false;
+    public bool BlueRoomComplete = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake() {
