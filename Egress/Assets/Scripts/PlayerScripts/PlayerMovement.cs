@@ -142,7 +142,7 @@ public class Player : MonoBehaviour
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
         // Shift key to sprint
 
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift) && isGrounded ? RunSpeed : MoveSpeed;
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : MoveSpeed;
         Vector3 targetVelocity = movement * currentSpeed;
 
         // Apply movement to the Rigidbody
