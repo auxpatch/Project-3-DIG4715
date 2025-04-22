@@ -32,7 +32,7 @@ public class Player : MonoBehaviour
 
     // Air Dash Trail
     private bool dashing = true;
-    private float dashingPower = 150f;
+    public float dashingPower = 150f;
     private float dashingTime = 0.3f;
     private float dashingCooldown = 10f;
     public WallTorchTrigger wallTorchTrigger;
@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
     private float knockbackTime = 0.5f;
     private float knockBackCounter;
     //public int RoomsComplete = 0;
+    public float dashDistance;
+    float currentSpeed;
 
 
 
@@ -142,7 +144,22 @@ public class Player : MonoBehaviour
         Vector3 movement = (transform.right * moveHorizontal + transform.forward * moveForward).normalized;
         // Shift key to sprint
 
-        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : MoveSpeed;
+        //float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? RunSpeed : MoveSpeed;
+        //float currentSpeed;
+         if (Input.GetKey(KeyCode.LeftShift))
+            {
+                if (isGrounded)
+                {
+                    currentSpeed = RunSpeed;
+                }
+                if (!isGrounded)
+                {
+                    currentSpeed = dashDistance;
+                }
+                
+            } else{
+                currentSpeed = MoveSpeed;
+            }
         Vector3 targetVelocity = movement * currentSpeed;
 
         // Apply movement to the Rigidbody
