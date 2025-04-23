@@ -163,9 +163,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  dashingPower: 150
   wallTorchTrigger: {fileID: 365717981132774897}
   jumpSound: {fileID: 8300000, guid: 2a842e8216336dc43ad9f5be14ce9abd, type: 3}
-  RoomsComplete: 0
+  dashDistance: 10
   tr: {fileID: 7996649993788301740}
 --- !u!96 &7996649993788301740
 TrailRenderer:
@@ -317,7 +318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0cae3a1e422d5e47be8c4cbdd0d6137, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.9850123
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0cae3a1e422d5e47be8c4cbdd0d6137, type: 3}
       propertyPath: m_LocalRotation.x
@@ -325,7 +326,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0cae3a1e422d5e47be8c4cbdd0d6137, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: 0.17248449
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0cae3a1e422d5e47be8c4cbdd0d6137, type: 3}
       propertyPath: m_LocalRotation.z
