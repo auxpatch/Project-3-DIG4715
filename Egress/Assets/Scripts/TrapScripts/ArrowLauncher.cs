@@ -8,7 +8,7 @@ public class ArrowLauncher : MonoBehaviour
 
     public Quaternion spawnRotation;
 
-    public float spawnTime = 3f;
+    public float spawnTime = 3f; 
 
     private float timeSinceSpawned = 0f; // Time in seconds between each arrow spawn
     void Start()
@@ -23,7 +23,7 @@ public class ArrowLauncher : MonoBehaviour
 
         if (timeSinceSpawned >= spawnTime)
         {
-            Instantiate(arrow, spawnLocation.position, spawnRotation);
+            Instantiate(arrow, spawnLocation.position, spawnRotation); // Creaate an arrow at the spawn location with the specified rotation
             timeSinceSpawned = 0;
         }
     }

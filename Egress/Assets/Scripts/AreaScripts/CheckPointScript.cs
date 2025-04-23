@@ -8,15 +8,15 @@ public class CheckPointScript : MonoBehaviour
 
     void Awake()
     {
-        respawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>();
+        respawn = GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>(); // Find the RespawnScript component on the GameObject with the "Respawn" tag
     }
-    // Start is called before the first frame update
+    
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         
@@ -27,7 +27,7 @@ public class CheckPointScript : MonoBehaviour
         //soundManager.Instance.PlaySFX("CheckpointDing");
         if(other.gameObject.CompareTag("Player"))
         {
-            respawn.respawnPoint = this.gameObject;
+            respawn.respawnPoint = this.gameObject; // When the player enters the checkpoint, set the respawn point to this checkpoint
         }
     }
     

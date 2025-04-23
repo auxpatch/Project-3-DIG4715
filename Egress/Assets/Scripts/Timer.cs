@@ -14,7 +14,7 @@ public class Timer : MonoBehaviour
     {
         DisplayTime();
         StartCoroutine(Countdown());
-        _gameOverPanel.SetActive(false);
+        _gameOverPanel.SetActive(false); //Hide the game over panel at the start
     }
 
     private IEnumerator Countdown()
@@ -30,7 +30,7 @@ public class Timer : MonoBehaviour
                     if (_hours == 0)
                     {
                         Debug.Log("Time out");
-                        _gameOverPanel.SetActive(true);
+                        _gameOverPanel.SetActive(true); // Show the game over panel when time is up
                         Time.timeScale = 0f;
                         Cursor.lockState = CursorLockMode.None;
                         Cursor.visible = true;
