@@ -925,6 +925,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoomsComplete: 0
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!4 &74471861
 Transform:
   m_ObjectHideFlags: 0
@@ -12183,6 +12186,9 @@ MonoBehaviour:
   greenLevel: 0
   hub: 1
   WinScreen: {fileID: 0}
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!65 &1236495633
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18135,6 +18141,10 @@ PrefabInstance:
     - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: dashDistance
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4886117358834432267, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_LocalPosition.x
