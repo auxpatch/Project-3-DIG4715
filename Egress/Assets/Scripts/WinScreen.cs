@@ -20,7 +20,7 @@ public class WinScreen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.L))
+        if(Win_Screen.activeSelf)
         {
                 PauseGame();
                 //soundManager.Instance.musicLoopSource.Pause();
@@ -30,7 +30,7 @@ public class WinScreen : MonoBehaviour
 
     public void PauseGame()
     {
-        Win_Screen.SetActive(true);
+
         isPaused = true;
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
