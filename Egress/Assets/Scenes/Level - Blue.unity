@@ -3984,7 +3984,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -60.09
+      value: -105.7
       objectReference: {fileID: 0}
     - target: {fileID: 3725756729394078813, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6875,6 +6875,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   RoomsComplete: 0
+  RedRoomComplete: 0
+  GreenRoomComplete: 0
+  BlueRoomComplete: 0
 --- !u!4 &1233306230
 Transform:
   m_ObjectHideFlags: 0
@@ -10873,7 +10876,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1964624780
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11929,7 +11932,7 @@ Transform:
   m_GameObject: {fileID: 2101615359}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.13, y: 2.5010002, z: -64.04}
+  m_LocalPosition: {x: 1.13, y: 2.5010002, z: -109.649994}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
