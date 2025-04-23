@@ -4548,6 +4548,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 535944219091256012, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.04382423
+      objectReference: {fileID: 0}
+    - target: {fileID: 535944219091256012, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.12099405
+      objectReference: {fileID: 0}
+    - target: {fileID: 535944219091256012, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.018100834
+      objectReference: {fileID: 0}
     - target: {fileID: 876946319987091168, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.69
@@ -12370,6 +12382,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrapTile (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3369609361975703351, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 2025043056}
+    - target: {fileID: 3369609361975703351, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1728080872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
