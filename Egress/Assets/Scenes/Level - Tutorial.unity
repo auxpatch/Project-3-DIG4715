@@ -18146,6 +18146,10 @@ PrefabInstance:
       propertyPath: dashDistance
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4735256890925531657, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
+      propertyPath: dashingPower
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 4886117358834432267, guid: 3a23e9c7138f54042ae3638e56f39278, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.0016322364
