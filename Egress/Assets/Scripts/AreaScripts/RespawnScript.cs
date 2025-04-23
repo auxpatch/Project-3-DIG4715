@@ -7,22 +7,22 @@ public class RespawnScript : MonoBehaviour
     public GameObject player;
     public GameObject respawnPoint;
     public GameObject debugPoint;
-    // Start is called before the first frame update
+   
     void Start()
     {
         
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.G))
+        if (Input.GetKeyDown(KeyCode.G)) //Debug for testing
         {
             respawnPoint = debugPoint;
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other) //when the player enters the trigger collider they'll be teleported to the respawn point
     {
         if(other.gameObject.CompareTag("Player"))
         {

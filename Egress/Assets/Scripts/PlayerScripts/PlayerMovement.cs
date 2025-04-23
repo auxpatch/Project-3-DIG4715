@@ -44,6 +44,8 @@ public class Player : MonoBehaviour
     private float knockbackTime = 0.5f;
     private float knockBackCounter;
     //public int RoomsComplete = 0;
+   
+   //Player Air Dash
     public float dashDistance;
     float currentSpeed;
 
@@ -95,7 +97,7 @@ public class Player : MonoBehaviour
         {
             Jump();
             anim.SetInteger("State", 1);
-            //audioManager.PlayOneShot(jumpSound);
+            //Jump sound and animation
             soundManager.Instance.PlaySFX("Jump");
         }
 
@@ -175,7 +177,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    void RotateCamera()
+    void RotateCamera() //Rotates the camera based on the mouse and controller input
     {
         float horizontalRotation = Input.GetAxis("Mouse X") * mouseSensitivity;
         horizontalRotation += Input.GetAxis("Controller X") * controllerSensitivity;
@@ -189,14 +191,14 @@ public class Player : MonoBehaviour
         cameraTransform.localRotation = Quaternion.Euler(verticalRotation, 0, 0);
     }
 
-    void Jump()
+    void Jump() //Player's normal jump
     {
         isGrounded = false;
         groundCheckTimer = groundCheckDelay;
         rb.linearVelocity = new Vector3(rb.linearVelocity.x, jumpForce, rb.linearVelocity.z); 
     }
 
-    void ApplyJumpPhysics()
+    void ApplyJumpPhysics() //Helps the player's jump feel more natural
     {
         if (rb.linearVelocity.y < 0)
         {
@@ -210,22 +212,22 @@ public class Player : MonoBehaviour
         }
     }
 
-    private IEnumerator Dash()
+    private IEnumerator Dash() //The player can horrizontally dash in the air 
     {
         dashing = true;
         tr.emitting = true;
 
         Vector3 originalGravity = Physics.gravity;
         Physics.gravity = new Vector3(0, originalGravity.y, 0);
-        soundManager.Instance.PlaySFX("AirDash");
+        soundManager.Instance.PlaySFX("AirDash"); //sound effect that plays while dashing
 
         rb.linearVelocity = new Vector3(transform.forward.x * dashingPower, 5f, transform.forward.z * dashingPower);
         yield return new WaitForSeconds(dashingTime);
         Physics.gravity = originalGravity;
         rb.linearVelocity = new Vector3(0f, rb.linearVelocity.y, 0f);
         tr.emitting = false;
-                //Flame particles toggle
-        if (wallTorchTrigger != null)
+                
+        if (wallTorchTrigger != null)  //Toggles the flame torch to off when the player air dashes
         {
             wallTorchTrigger.TurnOffFlameParticles();
             Debug.Log("Torch Deactivated");
@@ -238,7 +240,7 @@ public class Player : MonoBehaviour
 
     }
 
-     private void OnTriggerEnter(Collider other)
+     private void OnTriggerEnter(Collider other) //Relighting the torch for level testing
     {
         if (other.CompareTag("Torch")) 
         {
@@ -246,7 +248,7 @@ public class Player : MonoBehaviour
             Debug.Log("Torch Relit");
         }
 
-        else if (other.CompareTag("Arrow"))
+        else if (other.CompareTag("Arrow")) //Causes the player to get knocked back when hit by an arrow
         {
             Vector3 knockbackDirection = (transform.position - other.transform.position).normalized;
 
@@ -256,7 +258,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void KnockBack(Vector3 direction)
+    public void KnockBack(Vector3 direction) //How much the flamming arrows will knockback the player
     {
         knockBackCounter = knockbackTime;
 
