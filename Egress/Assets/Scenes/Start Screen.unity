@@ -2205,6 +2205,8 @@ MonoBehaviour:
   audioSource: {fileID: 69252460}
   stone1: {fileID: 8300000, guid: 0bd3f648342ac244a8f9f953c0d92e47, type: 3}
   stone2: {fileID: 8300000, guid: ec8a4a83f259d29459a61ea2a571c191, type: 3}
+  musicSlider: {fileID: 1557083698}
+  sfxSlider: {fileID: 1036000838}
 --- !u!114 &597244396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3302,8 +3304,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6910033858668965861, guid: f70c2eb2665225c42bcef26ec7303b9c, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 597244395}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
         m_MethodName: sfxVolume
         m_Mode: 1
         m_Arguments:
@@ -4518,6 +4520,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   stone1: {fileID: 0}
   stone2: {fileID: 0}
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
 --- !u!114 &1279688001
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5558,8 +5562,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6910033858668965861, guid: f70c2eb2665225c42bcef26ec7303b9c, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+      - m_Target: {fileID: 597244395}
+        m_TargetAssemblyTypeName: StartGame, Assembly-CSharp
         m_MethodName: musicVolume
         m_Mode: 1
         m_Arguments:

@@ -2,17 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.UI;
+using UnityEngine.Events;
 public class StartGame : MonoBehaviour
 {
     public AudioSource audioSource;
     public AudioClip stone1;
     public AudioClip stone2;
 
+    public Slider musicSlider, sfxSlider;
+    soundManager soundManager;
+
 
     void Start()
     {
-
+        soundManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<soundManager>();
     }
 
     public void QuitGame()
@@ -21,6 +25,17 @@ public class StartGame : MonoBehaviour
         Debug.Log("Game ended.");
 
     }
+
+    public void musicVolume()
+    {
+        soundManager.Instance.ChangeMusic(musicSlider.value);
+    }
+
+    public void sfxVolume()
+    {
+        soundManager.Instance.ChangeSfx(sfxSlider.value);
+    }
+
 
     public void tabletsound()
     {
@@ -39,7 +54,6 @@ public class StartGame : MonoBehaviour
         SceneManager.LoadScene("Level - Tutorial", LoadSceneMode.Single);
         Debug.Log("Next Scene");
     }
-
 
 
 }

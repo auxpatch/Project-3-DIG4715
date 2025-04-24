@@ -46,7 +46,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        //soundManager.toggleMusic();
+        soundManager.toggleMusic();
     }
 
     public void ResumeGame()
@@ -56,13 +56,13 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        //soundManager.toggleMusic();
+        soundManager.toggleMusic();
     }
 
     public void ToMainMenu()
     {
         Time.timeScale = 1f;
-        //soundManager.toggleMusic();
+        soundManager.toggleMusic();
         SceneManager.LoadScene("Start Screen");
         
     }
@@ -71,6 +71,8 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Hub World");
+        soundManager.Instance.musicSource.Stop();
+        soundManager.Instance.PlayMusicLoop("Hub");
         
     }
 
