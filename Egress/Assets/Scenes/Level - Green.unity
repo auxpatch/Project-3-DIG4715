@@ -7301,8 +7301,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Pausemenu: {fileID: 559178800}
   isPaused: 0
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
+  musicSlider: {fileID: 831507444}
+  sfxSlider: {fileID: 993707943}
 --- !u!114 &962207894
 MonoBehaviour:
   m_ObjectHideFlags: 0

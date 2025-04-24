@@ -14532,7 +14532,7 @@ MonoBehaviour:
   Pausemenu: {fileID: 1391325815}
   isPaused: 0
   musicSlider: {fileID: 580419969}
-  sfxSlider: {fileID: 0}
+  sfxSlider: {fileID: 1311209751}
 --- !u!114 &2012359977
 MonoBehaviour:
   m_ObjectHideFlags: 0
