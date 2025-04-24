@@ -1557,6 +1557,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4203282900844238306, guid: 880d1bb00c1ffae45be5d0981e47489c, type: 3}
   m_PrefabInstance: {fileID: 271499144}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &280722164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2013738040759321503, guid: 00202e9c091ae5f44893496c1fcf681e, type: 3}
+  m_PrefabInstance: {fileID: 982443170}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &303433640 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e3f1a4271cc79f145a10648ea37f51fe, type: 3}
@@ -2791,6 +2796,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrapTile (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3369609361975703351, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1728080872}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3732,6 +3741,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrapTile (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3369609361975703351, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 2020648612}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6624,6 +6637,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 895121400}
   m_CullTransparentMesh: 1
+--- !u!1 &896641870 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2013738040759321503, guid: 00202e9c091ae5f44893496c1fcf681e, type: 3}
+  m_PrefabInstance: {fileID: 2071420625}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &911341554
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7017,6 +7035,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrapTile (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3369609361975703351, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 896641870}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13769,7 +13791,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1164871159418537999, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.004
       objectReference: {fileID: 0}
     - target: {fileID: 1164871159418537999, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14594,6 +14616,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &2020648612 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2013738040759321503, guid: 00202e9c091ae5f44893496c1fcf681e, type: 3}
+  m_PrefabInstance: {fileID: 5046975573197042488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2021579310
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14919,6 +14946,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TrapTile (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 3369609361975703351, guid: 5a346fc760dcb224f85e2d072b6291f6, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 280722164}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

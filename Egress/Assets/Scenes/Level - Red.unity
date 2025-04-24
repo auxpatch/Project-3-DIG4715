@@ -4494,10 +4494,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6910033858668965861, guid: f70c2eb2665225c42bcef26ec7303b9c, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: musicVolume
-        m_Mode: 1
+      - m_Target: {fileID: 1368219092487254754, guid: f70c2eb2665225c42bcef26ec7303b9c, type: 3}
+        m_TargetAssemblyTypeName: soundManager, Assembly-CSharp
+        m_MethodName: ChangeMusic
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -11101,10 +11101,10 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6910033858668965861, guid: f70c2eb2665225c42bcef26ec7303b9c, type: 3}
-        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
-        m_MethodName: sfxVolume
-        m_Mode: 1
+      - m_Target: {fileID: 1368219092487254754, guid: f70c2eb2665225c42bcef26ec7303b9c, type: 3}
+        m_TargetAssemblyTypeName: soundManager, Assembly-CSharp
+        m_MethodName: ChangeSfx
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
