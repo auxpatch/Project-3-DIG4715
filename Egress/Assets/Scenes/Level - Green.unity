@@ -11456,7 +11456,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 2489478213904239594, guid: 30af90053d6d6984ca44e90b7d96a320, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30af90053d6d6984ca44e90b7d96a320, type: 3}
@@ -16908,6 +16909,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d031079ae1d364b44a73ba4cd2b2b44f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  stone1: {fileID: 0}
+  stone2: {fileID: 0}
 --- !u!114 &2147064985
 MonoBehaviour:
   m_ObjectHideFlags: 0
