@@ -29,6 +29,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level - Green.unity
     guid: c77d18cea55fcce4aa6e6bb83faabf84
+  - enabled: 1
+    path: Assets/Scenes/closing cutscene.unity
+    guid: 39f5d95605815a54b808b25521b725ce
+  - enabled: 1
+    path: Assets/Scenes/Winscreen.unity
+    guid: c1764f691a434564bbc7956c9c5abb3a
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: f5b49deee67cb7c4ab1ae613f4b36f3f, type: 3}
   m_UseUCBPForAssetBundles: 0

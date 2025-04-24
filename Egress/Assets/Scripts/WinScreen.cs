@@ -13,29 +13,30 @@ public class WinScreen : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Win_Screen.SetActive(false);
+        //Win_Screen.SetActive(true);
+        //PauseGame();
         //Time.timeScale = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Win_Screen.activeSelf)
-        {
-                PauseGame();
+        //if(Win_Screen.activeSelf)
+        //{
+        //        PauseGame();
                 //soundManager.Instance.musicLoopSource.Pause();
             
-        }
+        //}
     }
 
-    public void PauseGame()
-    {
+    //public void PauseGame()
+    //{
 
-        isPaused = true;
-        Time.timeScale = 0f;
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-    }
+        //isPaused = true;
+        //Time.timeScale = 0f;
+        //Cursor.lockState = CursorLockMode.None;
+        //Cursor.visible = true;
+    //}
     
     public void ToMainMenu()
     {
