@@ -11,11 +11,13 @@ public class PlayerController : MonoBehaviour
     public bool RedRoomComplete = false;
     public bool GreenRoomComplete = false;
     public bool BlueRoomComplete = false;
+    public GameObject respawnPoint;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake() {
     if (GameObject.FindGameObjectsWithTag("GameController").Length > 1){
         Destroy(gameObject);
+        
     }
     else {
         //initialize

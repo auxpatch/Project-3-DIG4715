@@ -7,10 +7,11 @@ public class RespawnScript : MonoBehaviour
     public GameObject player;
     public GameObject respawnPoint;
     public GameObject debugPoint;
+    PlayerController gameController;
    
     void Start()
     {
-        
+        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerController>();
     }
 
    
@@ -26,7 +27,7 @@ public class RespawnScript : MonoBehaviour
     {
         if(other.gameObject.CompareTag("Player"))
         {
-            player.transform.position = respawnPoint.transform.position;
+            player.transform.position = gameController.respawnPoint.transform.position;
 
             Debug.Log("Player hit");
         }

@@ -221,19 +221,24 @@ public class AltCameraPlayerMovement : MonoBehaviour
 
      private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Torch")) 
+        if (other != null)
         {
-            wallTorchTrigger.ActivateTorch();
-            Debug.Log("Torch Relit");
-        }
 
-        else if (other.CompareTag("Arrow"))
-        {
-            Vector3 knockbackDirection = (transform.position - other.transform.position).normalized;
+        
+            if (other.CompareTag("Torch")) 
+            {
+                wallTorchTrigger.ActivateTorch();
+                Debug.Log("Torch Relit");
+            }
 
-            KnockBack(knockbackDirection);
+            else if (other.CompareTag("Arrow"))
+            {
+                Vector3 knockbackDirection = (transform.position - other.transform.position).normalized;
 
-            Debug.Log("Knockback");
+                KnockBack(knockbackDirection);
+
+                Debug.Log("Knockback");
+            }
         }
     }
 

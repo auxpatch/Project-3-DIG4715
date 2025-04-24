@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -12,6 +13,7 @@ public class LevelChange : MonoBehaviour
     public bool blueLevel;
     public bool greenLevel;
     public bool hub;
+    public bool winScreen;
     private bool redLevelComplete = false;
     private bool GreenLevelComplete = false;
     private bool blueLevelComplete = false;
@@ -23,6 +25,7 @@ public class LevelChange : MonoBehaviour
      public bool RedRoomComplete;
     public bool GreenRoomComplete;
     public bool BlueRoomComplete;
+    public bool openCut = false;
     
 
     // Start is called before the first frame update
@@ -43,8 +46,12 @@ public class LevelChange : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.CompareTag("Player"))
-        {
-            
+        {   /*
+            if (openCut)
+            {
+                SceneManager.LoadScene("Cutscene Opening");
+            }
+            */
             if (hub) 
             {   
                 
@@ -57,23 +64,23 @@ public class LevelChange : MonoBehaviour
                 {
                     redLevelComplete = true;
                     playerController.RedRoomComplete = true;
-                    playerController.RoomsComplete = 2;
+                    playerController.RoomsComplete++;
                     Debug.Log("Red Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Green")
                 {
                     GreenLevelComplete = true;
                     playerController.GreenRoomComplete = true;
-                    playerController.RoomsComplete = 4;
+                    playerController.RoomsComplete ++;
                     Debug.Log("Green Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Blue")
                 {
                     blueLevelComplete = true;
                     playerController.BlueRoomComplete = true;
-                    playerController.RoomsComplete = 3;
+                    playerController.RoomsComplete++;
                     Debug.Log("Blue Level Complete");
                 } else if (SceneManager.GetActiveScene().name == "Level - Tutorial")
                 {
-                    playerController.RoomsComplete = 1;
+                    playerController.RoomsComplete++;
                     Debug.Log("Tutorial Level Complete");
                 }
                 SceneManager.LoadScene("Hub World");
@@ -100,9 +107,10 @@ public class LevelChange : MonoBehaviour
                 SceneManager.LoadScene("Level - Green");
                 soundManager.Instance.PlayMusic("Level1");
             }
-            else if (playerController.RoomsComplete == 4)
+            else if (playerController.BlueRoomComplete && playerController.GreenRoomComplete && playerController.RedRoomComplete)
             {
                 Debug.Log("Win");
+                Destroy(GameObject.FindGameObjectWithTag("GameController"));
                 SceneManager.LoadScene("closing cutscene");
             }
             else {Debug.Log("No Level to Load!");}

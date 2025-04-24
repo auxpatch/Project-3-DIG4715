@@ -9,6 +9,7 @@ TagManager:
   - Torch
   - tablet
   - Arrow
+  - Moving Platform
   layers:
   - Default
   - TransparentFX

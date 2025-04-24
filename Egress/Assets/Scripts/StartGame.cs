@@ -22,8 +22,8 @@ public class StartGame : MonoBehaviour
     {
         soundManager.Instance.musicLoopSource.Stop();
         soundManager.Instance.musicSource.Stop();
-        SceneManager.LoadScene("Level - Tutorial", LoadSceneMode.Single);
         soundManager.Instance.PlayMusicLoop("Tutorial");
+        SceneManager.LoadScene("Level - Tutorial", LoadSceneMode.Single);
         Debug.Log("Next Scene");
     }
 

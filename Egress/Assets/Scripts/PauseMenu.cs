@@ -11,12 +11,14 @@ public class PauseMenu : MonoBehaviour
     public bool isPaused;
 
     public Slider musicSlider, sfxSlider;
+    soundManager soundManager;
 
     // Start is called before the first frame update
     void Start()
     {
         Pausemenu.SetActive(false);
         //Time.timeScale = 0;
+        soundManager = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<soundManager>();
     }
 
     // Update is called once per frame
@@ -44,6 +46,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        soundManager.toggleMusic();
     }
 
     public void ResumeGame()
@@ -53,12 +56,15 @@ public class PauseMenu : MonoBehaviour
         isPaused = false;
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        soundManager.toggleMusic();
     }
 
     public void ToMainMenu()
     {
         Time.timeScale = 1f;
+        soundManager.toggleMusic();
         SceneManager.LoadScene("Start Screen");
+        
     }
 
     public void ToggleMusic()

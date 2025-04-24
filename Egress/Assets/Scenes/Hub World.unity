@@ -207,6 +207,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1272077466735961048, guid: f47a304f37bd7964e9ff1a2239db0add, type: 3}
   m_PrefabInstance: {fileID: 34385233}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &49138463 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -3594631133822795459, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+  m_PrefabInstance: {fileID: 1298244324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &49138467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49138463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a47fbc27079c8aa469378f61600e0d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Win_Screen: {fileID: 0}
+  isPaused: 0
+--- !u!65 &49138468
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 49138463}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.0978994, y: 5.2071896, z: 0}
+  m_Center: {x: 0, y: 5.015658, z: 15.050482}
 --- !u!1 &64907784 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7423063161142149955, guid: da04815d2c38f764898021adb5c23b97, type: 3}
@@ -1752,6 +1792,7 @@ MonoBehaviour:
   blueLevel: 0
   greenLevel: 0
   hub: 0
+  winScreen: 0
   FullGameComplete: 0
   RedRoomComplete: 0
   GreenRoomComplete: 0
@@ -3027,7 +3068,7 @@ PrefabInstance:
     - target: {fileID: 190132572676512216, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
       propertyPath: volumeSlider
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 579495193}
     - target: {fileID: 3123052833279844367, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -3071,6 +3112,10 @@ PrefabInstance:
     - target: {fileID: 5328810724515143634, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
       propertyPath: m_Name
       value: AudioManager (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328810724515143634, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
+      propertyPath: m_TagString
+      value: AudioManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3706,6 +3751,7 @@ MonoBehaviour:
   blueLevel: 0
   greenLevel: 1
   hub: 0
+  winScreen: 0
   FullGameComplete: 0
   RedRoomComplete: 0
   GreenRoomComplete: 0
@@ -6910,6 +6956,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -4129443868322503507, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1612405778}
+    - targetCorrespondingSourceObject: {fileID: -3594631133822795459, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 49138467}
+    - targetCorrespondingSourceObject: {fileID: -3594631133822795459, guid: da04815d2c38f764898021adb5c23b97, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 49138468}
     - targetCorrespondingSourceObject: {fileID: -3919137934840009513, guid: da04815d2c38f764898021adb5c23b97, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1076976604}
@@ -7118,6 +7170,7 @@ MonoBehaviour:
   blueLevel: 1
   greenLevel: 0
   hub: 0
+  winScreen: 0
   FullGameComplete: 0
   RedRoomComplete: 0
   GreenRoomComplete: 0
@@ -7922,6 +7975,7 @@ MonoBehaviour:
   blueLevel: 0
   greenLevel: 0
   hub: 0
+  winScreen: 0
   FullGameComplete: 1
   RedRoomComplete: 0
   GreenRoomComplete: 0
@@ -9254,6 +9308,7 @@ GameObject:
   - component: {fileID: 2123258327}
   - component: {fileID: 2123258331}
   - component: {fileID: 2123258332}
+  - component: {fileID: 2123258333}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9421,6 +9476,18 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4f580b4e19a801742b576964da23da43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2123258333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2123258326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dbb40977c248234cbcc1dbaf1276762, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &2779330533238220839
