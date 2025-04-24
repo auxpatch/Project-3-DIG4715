@@ -71,6 +71,8 @@ public class PauseMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         SceneManager.LoadScene("Hub World");
+        soundManager.Instance.musicSource.Stop();
+        soundManager.Instance.PlayMusicLoop("Hub");
         
     }
 
