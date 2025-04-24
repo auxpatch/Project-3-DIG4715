@@ -16,7 +16,10 @@ public class LevelChange : MonoBehaviour
     private bool GreenLevelComplete = false;
     private bool blueLevelComplete = false;
     PlayerController playerController;
-    public GameObject WinScreen;
+    //public GameObject WinScreen;
+    private bool GameComplete;
+    
+    public bool FullGameComplete;
      public bool RedRoomComplete;
     public bool GreenRoomComplete;
     public bool BlueRoomComplete;
@@ -100,10 +103,7 @@ public class LevelChange : MonoBehaviour
             else if (playerController.RoomsComplete == 4)
             {
                 Debug.Log("Win");
-                WinScreen.SetActive(true);
-                Time.timeScale = 0f;
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
+                SceneManager.LoadScene("closing cutscene");
             }
             else {Debug.Log("No Level to Load!");}
             
