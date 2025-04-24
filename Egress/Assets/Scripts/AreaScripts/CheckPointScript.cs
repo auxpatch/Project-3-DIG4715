@@ -16,7 +16,7 @@ public class CheckPointScript : MonoBehaviour
     
     void Start()
     {
-        gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerController>();
+        //gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerController>();
     }
 
     
@@ -31,7 +31,10 @@ public class CheckPointScript : MonoBehaviour
         if(other.gameObject.CompareTag("Player"))
         {
             //GameObject.FindGameObjectWithTag("Respawn").GetComponent<RespawnScript>().respawnPoint = this.gameObject;
+            
+            //gameController.respawnPoint.transform.position = transform.position;
             gameController.respawnPoint = this.gameObject;
+            //respawn.respawnPoint1 = gameController.respawnPoint;
             //respawn.respawnPoint = this.gameObject; // When the player enters the checkpoint, set the respawn point to this checkpoint
         }
     }

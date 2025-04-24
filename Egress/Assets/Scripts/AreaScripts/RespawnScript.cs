@@ -5,13 +5,16 @@ using UnityEngine;
 public class RespawnScript : MonoBehaviour
 {
     public GameObject player;
-    public GameObject respawnPoint;
+    public GameObject respawnPoint1;
     public GameObject debugPoint;
     PlayerController gameController;
    
     void Start()
     {
         gameController = GameObject.FindGameObjectWithTag("GameController").GetComponent<PlayerController>();
+        respawnPoint1 = gameController.respawnPoint;
+        //gameController.respawnPoint = respawnPoint1;
+        //respawnPoint1 = gameController.respawnPoint;
     }
 
    
@@ -19,7 +22,7 @@ public class RespawnScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.G)) //Debug for testing
         {
-            respawnPoint = debugPoint;
+            //respawnPoint = debugPoint;
         }
     }
 
