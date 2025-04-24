@@ -83,7 +83,6 @@ MonoBehaviour:
   GreenRoomComplete: 0
   BlueRoomComplete: 0
   respawnPoint: {fileID: 3511431471343955265}
-  SM: {fileID: 0}
 --- !u!114 &9066029205597579303
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,6 +149,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5328810724515143634, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
       propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328810724515143634, guid: f2ebf1ca1c4e1c24190db16b6088c056, type: 3}
+      propertyPath: m_TagString
       value: AudioManager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
