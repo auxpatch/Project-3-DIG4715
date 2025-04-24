@@ -101,7 +101,7 @@ public class Player : MonoBehaviour
             soundManager.Instance.PlaySFX("Jump");
         }
 
-        if (Input.GetKeyDown(KeyCode.T))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             wallTorchTrigger.ActivateTorch();
             anim.SetInteger("State", 1);
