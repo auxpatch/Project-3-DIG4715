@@ -5,6 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class StartGame : MonoBehaviour
 {
+    public AudioSource audioSource;
+    public AudioClip stone1;
+    public AudioClip stone2;
+
 
     void Start()
     {
@@ -18,6 +22,15 @@ public class StartGame : MonoBehaviour
 
     }
 
+    public void tabletsound()
+    {
+      audioSource.PlayOneShot(stone1);
+    }
+
+    public void tabletleavesound()
+    {
+        audioSource.PlayOneShot(stone2);
+    }
     public void LoadSceneStart()
     {
         soundManager.Instance.musicLoopSource.Stop();
