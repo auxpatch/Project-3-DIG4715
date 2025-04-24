@@ -4955,7 +4955,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &582203495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16966,6 +16966,8 @@ MonoBehaviour:
   audioSource: {fileID: 0}
   stone1: {fileID: 0}
   stone2: {fileID: 0}
+  musicSlider: {fileID: 0}
+  sfxSlider: {fileID: 0}
 --- !u!114 &2147064985
 MonoBehaviour:
   m_ObjectHideFlags: 0
