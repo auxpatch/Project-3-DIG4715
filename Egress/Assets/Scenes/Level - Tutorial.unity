@@ -11772,6 +11772,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0dff96ef569935438af56fb252c45b7, type: 3}
+--- !u!1 &1222778151 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3511431471343955265, guid: f0dff96ef569935438af56fb252c45b7, type: 3}
+  m_PrefabInstance: {fileID: 1222778150}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1227049363 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 089988c0bcb2f454db708e93d2358101, type: 3}
@@ -16321,6 +16326,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 546990849}
+    - target: {fileID: 6121205117398302260, guid: 30af90053d6d6984ca44e90b7d96a320, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1222778151}
     - target: {fileID: 8418569748130427979, guid: 30af90053d6d6984ca44e90b7d96a320, type: 3}
       propertyPath: m_LocalScale.x
       value: 1

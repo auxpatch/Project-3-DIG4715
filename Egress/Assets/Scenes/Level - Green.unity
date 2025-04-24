@@ -11415,6 +11415,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 600157698}
+    - target: {fileID: 6121205117398302260, guid: 30af90053d6d6984ca44e90b7d96a320, type: 3}
+      propertyPath: respawnPoint
+      value: 
+      objectReference: {fileID: 1570453832}
     - target: {fileID: 8418569748130427979, guid: 30af90053d6d6984ca44e90b7d96a320, type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.9989166
@@ -12345,6 +12349,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 8889787332626535031, guid: 0c7841ae7481d9e4d914039e2d469fa9, type: 3}
   m_PrefabInstance: {fileID: 1548818227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1570453832 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3511431471343955265, guid: f0dff96ef569935438af56fb252c45b7, type: 3}
+  m_PrefabInstance: {fileID: 374288871}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1587284855
 GameObject:
